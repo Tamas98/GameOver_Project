@@ -1,27 +1,27 @@
 # GameOver: Rendszerkövetelmények
 
-## 1. A rendszer célja
+## I. A rendszer célja
 
-## 2. Projekt terv
+## II. Projekt terv
 
-## 3. Üzleti folyamatok modellje
+## III. Üzleti folyamatok modellje
 
-## 4. Követelmények
+## IV. Követelmények
 
-## 5. Funkcionális terv
+## V. Funkcionális terv
 
-## 6. Fizikai környezet
+## VI. Fizikai környezet
 
-## 7. Absztrakt domain modell
+## VII. Absztrakt domain modell
 
-## 8. Architekturális terv
+## VIII. Architekturális terv
 
-## 9. Adatbázis terv
+## IX. Adatbázis terv
 
-## 10. Implementációs terv
+## X. Implementációs terv
 
-## 11. Tesztterv
+## XI. Tesztterv
 
-## 12. Telepítési terv
+## XII. Telepítési terv
 
-## 13. Karbantartási terv
+## XIII. Karbantartási terv
