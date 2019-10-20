@@ -24,6 +24,33 @@ ajánl neki ilyeneket.
 
 ### IV.Látványterv
 
+A programablak neve: Game Over. A program sikeres indítása után a bejelentkező 
+képernyő fog megjelenni. A bejelentekző képernyőnek a felső részének a középénél
+lehet majd látni magának az alkalmazásnak a nevét kiírva, tehát a Game Over vagy
+pedig az alkalmazásnak megfelelő szöveg fog látszani. A szöveghez képest lennébb 
+tudja majd a felhasználó megadni a bejelentkezési adatait (Felhasználó név - Text Area,
+Jelszó - Text Area). Az ablak bal alsó részétől kicsit bennébb kezdve lehet majd látni
+a Regisztráció és a Bejelentkezés feliratú gombokat, illetve ugyan ezen a szinten
+jobb oldalt lesz a vendégként történő bejelentkezés gombja, Vendég vagy Vendég vagyok
+felirattal. Amennyiben a felhasználó bejelentkezéssel lépett be, úgy az adott felhasználó
+által kedvelt témájú játékok címei (3 db) jelenik meg ajánlásként. Annak az eldöntésére, hogy
+az ajánlott játék tetszik-e a felhasználónak, erre gombok állnak a rendelkezésére középen alul
+egymás mellett: Megnézem később, Kipróbálom/Tetszett és az hogy Nem tetszett. Miután 
+megfelelően jelezte a felhasználó, hogy mit szeretne tenni az ajánlott játékokkal, 
+az alkalmazás fő ablaka megjelenik. Egy Menü feliratú menüvel tud majd a felhasználó
+navigálni a további lehetőségei közül például: Új játék hozzáadása, Kilépés. A keresési
+lehetőség középen felül lesz és mellette egy Keresés feliratú gomb van ami elindítja
+a keresést. Megfelelő találat után a keresési lehetőseg alatt megjelennek/megjelenik a játék(ok).
+Ha a felhasználó valamelyik keresettre rákattint akkor további, bővebb információ jelenik meg
+róla. Ezen a felületen balul egy borítókép látszódik a játékról és a kép jobboldalán 
+jelennek meg az információk. Ugyan ezen a felületen alul van lehetőség az értékeléshez
+például egy egytől tizes skáláig. Lehetőseg is lehet a játékosnak, hogy megtekintse az
+adott játéknak az előzetesét egy Előzetes megtekintése feliratú gombbal. 
+Jobb alul egy gomb biztosítja a visszalépést további játékok kereséséhez Vissza felirattal.
+Mindig amikor egy gombot használ a felhasználó akkor megváltozik a gomb háttere.
+
+
+
 ### V.A program futása
 
 A program indulásakor lehetőséget kívánunk biztosítani a felhasználónak
