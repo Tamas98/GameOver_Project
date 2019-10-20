@@ -40,7 +40,7 @@ belőle.
 
 ### IV. Jelenlegi üzleti folyamatok modellje
 
-Jelenleg nincs vagy nagyon kevés olyan lehetősége van a mai felhasználóknak , hogy a **saját**
+Jelenleg nincs vagy nagyon kevés olyan lehetősége van a mai felhasználóknak, hogy a **saját**
 ízlésük szerint válogassanak a világon megjelenő valamennyi játékai közül, **gyártótól függetlenül**.
 Ha valaki szeretne érdeklődni a mai "trend" játékok iránt akkor vagy ehhez kapcsolódó **magazinokat**
 kell vegyen, vagy pedig ezzel a témával foglalkozó **oldalakat** kell böngésszen szinte már
@@ -50,7 +50,7 @@ számára a játék válogatása, akik kevésbé, vagy egyáltalán nem jártas 
 vagy akár többszemélyes (multiplayer) játékról van-e szó és így tovább. Tehát maga a **felhasználó 
 szempontjait** követve tud keresgélni a játékok között és ezzel nagyobb valószínűséggel tud olyan 
 játékokat találni magának, amivel szeretne játszani. A gyártó függetlenséget azért említettük,
-mert manapság a legtöbb játékokat gyártó cégek saját indítófelülettel rendelkeznek , ahol
+mert manapság a legtöbb játékokat gyártó cégek saját indítófelülettel rendelkeznek, ahol
 értelemszerűen az általuk támogatott játékok jelennek meg. Ezért sok felhasználóhóz nagy valószínűséggel
 nem juthat el olyan játék aminek sokkal kisebb hírneve van de sokkal nagyobb élményt nyújtana
 a játékosnak, ami főleg abból jön, hogy nincsenek megfelelően szelektálva a játékok, csupán annyi
