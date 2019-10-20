@@ -40,4 +40,20 @@ belőle.
 
 ### IV. Jelenlegi üzleti folyamatok modellje
 
+Jelenleg nincs vagy nagyon kevés olyan lehetősége van a mai felhasználóknak , hogy a **saját**
+ízlésük szerint válogassanak a világon megjelenő valamennyi játékai közül, **gyártótól függetlenül**.
+Ha már válogatásról van szó, akkor fontos az is nyílvánvalóan, hogy milyen stílusú maga a játék, egy (single player)
+vagy akár többszemélyes (multiplayer) játékról van-e szó és így tovább. Tehát maga a **felhasználó 
+szempontjait** követve tud keresgélni a játékok között és ezzel nagyobb valószínűséggel tud olyan 
+játékokat találni magának, amivel szeretne játszani. A gyártó függetlenséget azért említettük,
+mert manapság a legtöbb játékokat gyártó cégek saját indítófelülettel rendelkeznek , ahol
+értelemszerűen az általuk támogatott játékok jelennek meg. Ezért sok felhasználóhóz nagy valószínűséggel
+nem juthat el olyan játék aminek sokkal kisebb hírneve van de sokkal nagyobb élményt nyújtana
+a játékosnak, ami főleg abból jön, hogy nincsenek megfelelően szelektálva a játékok, csupán annyi
+a lényeg manapság, hogy a legnagyobb cégeknek a legnagyobb játékait vásárolják meg az emberek
+látszólag. Ezért gondoljuk úgy, hogy egyre jobban szükség van ilyen fajta szoftverekre ami segíti
+a felhasználókat a **játékok közötti böngészésében**, függetlenül attól, hogy mikor készült a játék,
+mennyien játszanak vele, ki a kiadója. A projekt keretein belül szeretnénk ezen problémák megoldására
+egy megfelelően  működő programot létrehozni.
+
 ### V. Igényelt üzleti folyamatok modellje
