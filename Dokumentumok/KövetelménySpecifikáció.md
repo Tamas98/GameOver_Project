@@ -42,7 +42,11 @@ belőle.
 
 Jelenleg nincs vagy nagyon kevés olyan lehetősége van a mai felhasználóknak , hogy a **saját**
 ízlésük szerint válogassanak a világon megjelenő valamennyi játékai közül, **gyártótól függetlenül**.
-Ha már válogatásról van szó, akkor fontos az is nyílvánvalóan, hogy milyen stílusú maga a játék, egy (single player)
+Ha valaki szeretne érdeklődni a mai "trend" játékok iránt akkor vagy ehhez kapcsolódó **magazinokat**
+kell vegyen, vagy pedig ezzel a témával foglalkozó **oldalakat** kell böngésszen szinte már
+napról napra, hogy képben legyen a jelenlegi helyzettel. Ezért nehéz lehet az olyan emberek
+számára a játék válogatása, akik kevésbé, vagy egyáltalán nem jártas ebben a világban (nem tudja például
+, hogy mely magazinokat vagy éppen weboldalakat érdemes felkeresni, amik megbízhatóak). Ha már válogatásról van szó, akkor fontos az is nyílvánvalóan, hogy milyen stílusú maga a játék, egy (single player)
 vagy akár többszemélyes (multiplayer) játékról van-e szó és így tovább. Tehát maga a **felhasználó 
 szempontjait** követve tud keresgélni a játékok között és ezzel nagyobb valószínűséggel tud olyan 
 játékokat találni magának, amivel szeretne játszani. A gyártó függetlenséget azért említettük,
