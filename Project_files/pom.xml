@@ -49,6 +49,10 @@
             <name>Erdei Kristóf</name>
             <email>erdeikristof@t-online.hu</email>
         </developer>
+        <developer>
+            <name>Tóth Csaba</name>
+            <email>99letter86@gmail.com</email>
+        </developer>
     </developers>
 
     <dependencies>
