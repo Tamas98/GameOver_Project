@@ -12,7 +12,7 @@ public class MainApplication extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Main.stage = primaryStage;
-        Parent root = FXMLLoader.load(getClass().getResource("FXMl/Udvozlo.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Udvozlo.fxml"));
         primaryStage.setTitle("Game_Over");
         primaryStage.getIcons().add(new Image("/Pictures/Icon.png"));
         primaryStage.setScene(new Scene(root, 600, 400));
