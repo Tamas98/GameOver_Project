@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>Porkolt</groupId>
+    <groupId>Projekt</groupId>
     <artifactId>Game_Over</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -37,14 +37,17 @@
     </repositories>
 
     <description>
-        This program is created to help you with your workout- and meal-plan.You can write down your exercises and meals
-        every day. Work hard and eat chicken.Go on!
+                Játék ajánló program.
     </description>
 
     <developers>
         <developer>
             <name>Tarcsa Tamás</name>
             <email>tarcsa.tamas90@gmail.com</email>
+        </developer>
+        <developer>
+            <name>Erdei Kristóf</name>
+            <email>erdeikristof@t-online.hu</email>
         </developer>
     </developers>
 
