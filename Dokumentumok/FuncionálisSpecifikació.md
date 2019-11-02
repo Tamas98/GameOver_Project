@@ -23,6 +23,26 @@ Ami az elsődleges és a legfontosabb az az, hogy **mindenki számára elérhet�
 
 ### III. Befolyásoló tényezők
 
+A mai világban ha szeretnél tartalmas, szórakoztató és mégis jellemépítő játékkal játszani,
+elég nehéz dolgod lesz találni egyet. A probléma ott kezdődik, hogy minden játékfejlesztő cégnek
+saját launcher-je van, ami szándékosan az általa fejlesztett játékokat helyezi előtérbe.
+Ilymódon nehézkesen lehet egy tiszta képet kapni a ténylegesen elképesztő, kihagyhatatlan
+játékokról. Az új játékok kiválasztását a szóbeszéd, baráti ajánlások és a reklámok
+befolyásolják. Más szóval az ember nem ismeri meg a kis cégek által kevésbé promóciózott
+termékeket. Ahhoz, hogy megtaláld az igazán nagyszerű játékélményt nyújtó szoftvereket, sok
+energiát és időt kell ráfordítani a keresésre, az információk összegyűjtésére. Szintén sok
+időt emészt fel a haszontalan és nem testhezálló játékok kipróbálása. Olyan szoftvert
+szeretnénk, ami összegyűjti egy helyre az információkat, megadott szempontok alapján ajánlásokat
+ad, ezzel segítve, hogy a felhasználó tudámásra jusson az elvárásainak megfelelő és a stílusához
+illő élményt nyújtó játék. A szoftver két legfontosabb tényezője a naprakészség és a
+közösség általi értékelés. A naprakészség itt azt jelenti, hogy a játékok adatbázisa ha nem
+is naponta de legalább hetente frissül a fejlesztők által vagy a felhasználói közösség is
+adhat hozzá játékot értelemszerűen a moderálás után. Valamint a programot is szeretnénk firssíteni
+legalább egyszer egy évben a felhasználói visszajelzések alapján. Alternatív felhasználási lehetőség,
+hogy a szülők akik nem szeretnék, hogy gyerekük agyzsibbasztó, értelmetlen, zombi játékokkal
+játszanak itt kitudják választani a megfelelő személyiség építő játékokat gyermekeik számára
+az értékelések alapján.
+
 ### IV. Látványterv
 
 A programablak neve: Game Over. A program **sikeres** indítása után a bejelentkező 
