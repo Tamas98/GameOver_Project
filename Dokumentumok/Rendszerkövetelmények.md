@@ -4,6 +4,29 @@
 
 ## II. Projekt terv
 
+####Projektszerepkörök, felelősségek
+
+| Szerepkör     | Felelősség   |
+| :-----------: | :----------: |
+| Felhasználók  | valami       |
+| Fejlesztők    | valami       |
+
+####Projektmunkások és felelősségeik
+
+| Projektmunkások | Felelősség   |
+| :-------------: | :----------: |
+| Tarcsa Tamás    | valami       |
+| Bakos Bálint    | valami       |
+| Erdei Kristóf   | valami       |
+| Tóth Csaba      | valami       |
+
+####Ütemterv
+
+| Dátum      | Haladás                                           |
+| :--------: | :-----------------------------------------------: |
+| 2019.10.21 | Követelmény-, Funkcionális specifikáció elkészült |
+| 2019.11.04 | Rendszerkövetelmények ekészült                    |
+
 ## III. Üzleti folyamatok modellje
 
 Napjainkban a domináns játéklisták nagytöbbsége valamilyen nagy vállalat/cég kezében van,
