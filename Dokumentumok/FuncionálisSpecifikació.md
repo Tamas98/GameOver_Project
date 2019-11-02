@@ -120,3 +120,13 @@ teljes cím, egy poszter, valamint egy gomb amely elviszi a felhasználót a
 játék előzeteséhez, vagy maga az előzetes fog megjelenni az alkalmazásban.
 
 ### VI. Megvalósítható?
+
+A projekt megvalósításához az alapvető szoftverfejlesztői eszközökre van szükség. A feladatok
+követésére egy online feladatkövető rendszert használunk, a Trellot. Ez az oldal tökéletesen
+alkalmazható a teendők egyeztetésére, feladatok felosztására. Ez úgy történik, hogy fejlesztői
+állomásokra bontjuk a projektet és kártyákkal jelezzük, hogy ki melyik feladatot készíti el.
+A kártyákhoz lehet és kell is időkorlátot társítani. A szoftver menedzseléséhez az Apache
+Mavent használjuk. Adatbázisokra is szükség van a felhasználók nevének és jelszavának és a
+játékok adatainak tárolásához. Ehhez JSON fájlokat fogunk használni. A program maga Java
+nyelven fog íródni. A grafikus felülethez viszont JavaFX-et fogunk használni. Verziókezelőnek
+a git-et alkalmazzuk.
