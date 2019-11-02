@@ -68,6 +68,25 @@ egyszerre a lehető legtöbb ember tudja használni gördülékenyen, akadás é
 
 ## VI. Fizikai környezet
 
+####Operációs rendszer - Linux, Windows
+
+A programot szeretnénk ha egyaránt lehetne futtatni Linuxon és Windowson is, így reméljük
+nagyobb népszerűségre tesz szert a hordozhatósága miatt. Linuxra elég egyszerűen eltudjuk
+készíteni, mivel ebben már van a csapatnak tapasztalata. A kihívás a Windows-os problémamentes
+futtatás, mivel ezt még eddig nem próbáltuk.
+
+####Programozási nyelv - Java
+
+Programozási nyelv egyszerűen a Java lesz, mivel ezaz a nyelv amiben mindenkinek van
+elég tapasztalata egy szoftver elkészítéséhez. Pontosan a Java SE Development Kit 11-et fogjuk
+alkalmazni. Tehát minden gép amelyen ezt a szoftvert szeretnénk használni elengedhetetlen ez
+a csomag.
+
+####Felhasználói felület - JavaFX
+
+Ahhoz, hogy szép és elfogadható kinezetű programot kapjunk a JavaFX grafikus technológiát
+használjuk. Valamint fxml fájlokat használva szerkesztjük a kinézetet.
+
 ## VII. Architekturális terv
 
 ## VIII. Tesztterv
