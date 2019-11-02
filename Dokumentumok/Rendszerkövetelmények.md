@@ -127,4 +127,24 @@ tutorial is megtalálható lesz hozzá, aminek segítségével ismertetjük a ha
 
 ## X. Karbantartási terv
 
-A megfelelő **karbantartási terv** végrehajtását szintén fontos teendőnknek tekintjük a projektünk életében. Természetesen programunkat annak elkészülte és kiadása után sem szeretnénk semmiféleképpen sem befejezettnek tekinteni. A sikeres tesztterv végrehajtása után sem garantált az, hogy semmilyen hiba nem fog előfordulni a későbbiekben. Emiatt ezeket az eseteket mindenféleképpen javítani szeretnénk majd minél hamarabb, nem hagyva cserben a felhasználóinkat. De ez csak egy kis része a teljes elképzelésünknek. Mivel emellett szeretnénk a jövőben tovább *fejleszteni* a szoftverünket, folyamatosan és minél több *új funkció*t hozzáadva. Ennek érdekében szeretnénk minél szorosabb köteléket kialakítani a felhasználói bázisunkkal és tartani velük a kontaktok. Erre lehetőségük lesz a honlapon és magán az alkalmazáson belül is. Illetve privátban is el tudják majd érni a fejlesztő csapatunk tagjait. Hallgatni fogunk az ő *észrevételeik*re is, sőt várjuk is az észrevételeket és az *ötletek*et. Emellet, ha bármilyen probléma merül fel a felhasználók részéről, annak megoldásában készségesen a segítségükre fogunk állni. Értelemszerűen a jövőben érkezni fognak kisebb, nagyobb **frissítések**. Amiket szintén tesztelni fogunk, ahogy az a teszttervek fejezet alatt részletesen megtalálható. Célunk, hogyha ez a projekt egy minél szélesebb skálát fedne le a **gaming** témakörön belül. Ezért nagy szükség van a rendszeres *újítások*ra, hogy fent tudjuk tartani a felhasználók igényeit és meg tudjunk felelni az elvárásaiknak. Fontos, hogy a program felhasználói felület ne avuljon el, mindig megfeleljen az adott trendeknek. Erre fel vagyunk készülve, nagy hangsúlyt fogunk fektetni a projektünk precíz karbantartására. A felhasználói elégedettség az egyik legfontosabb dolog számunkra, emiatt nem is engedhetjük meg magunknak, hogy ne foglalkozzunk szoftverünkkel a lehető leghoszabb ideig.
+A megfelelő **karbantartási terv** végrehajtását szintén fontos teendőnknek tekintjük a
+projektünk életében. Természetesen programunkat annak elkészülte és kiadása után sem
+szeretnénk semmiféleképpen sem befejezettnek tekinteni. A sikeres tesztterv végrehajtása
+után sem garantált az, hogy semmilyen hiba nem fog előfordulni a későbbiekben. Emiatt ezeket
+az eseteket mindenféleképpen javítani szeretnénk majd minél hamarabb, nem hagyva cserben a
+felhasználóinkat. De ez csak egy kis része a teljes elképzelésünknek. Mivel emellett
+szeretnénk a jövőben tovább *fejleszteni* a szoftverünket, folyamatosan és minél több *új
+funkció*t hozzáadva. Ennek érdekében szeretnénk minél szorosabb köteléket kialakítani a
+felhasználói bázisunkkal és tartani velük a kontaktok. Erre lehetőségük lesz a honlapon és
+magán az alkalmazáson belül is. Illetve privátban is el tudják majd érni a fejlesztő csapatunk
+tagjait. Hallgatni fogunk az ő *észrevételeik*re is, sőt várjuk is az észrevételeket és az
+*ötletek*et. Emellet, ha bármilyen probléma merül fel a felhasználók részéről, annak
+megoldásában készségesen a segítségükre fogunk állni. Értelemszerűen a jövőben érkezni fognak
+kisebb, nagyobb **frissítések**. Amiket szintén tesztelni fogunk, ahogy az a teszttervek
+fejezet alatt részletesen megtalálható. Célunk, hogyha ez a projekt egy minél szélesebb skálát
+fedne le a **gaming** témakörön belül. Ezért nagy szükség van a rendszeres *újítások*ra, hogy
+fent tudjuk tartani a felhasználók igényeit és meg tudjunk felelni az elvárásaiknak. Fontos,
+hogy a program felhasználói felület ne avuljon el, mindig megfeleljen az adott trendeknek.
+Erre fel vagyunk készülve, nagy hangsúlyt fogunk fektetni a projektünk precíz karbantartására.
+A felhasználói elégedettség az egyik legfontosabb dolog számunkra, emiatt nem is engedhetjük
+meg magunknak, hogy ne foglalkozzunk szoftverünkkel a lehető leghoszabb ideig.
