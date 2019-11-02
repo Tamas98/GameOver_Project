@@ -63,17 +63,17 @@ egy megfelelően  működő programot létrehozni.
 ### V. Igényelt üzleti folyamatok modellje
 
 Összefoglalva egy olyan programot szeretnénk amelyben megtalálhatóak egy helyen a népszerű és
-nem túl elterjedt játékok egyaránt. Kiadótól és márkától függetlenül szeretnénk bemutatni a
+nem túl elterjedt játékok egyaránt. Kiadótól és márkától függetlenül fogjuk bemutatni a
 játékokat, hogy a játékosok ne csak a promótált játékokról kapjanak információkat.
 Elősorban az lenne a cél, hogy a felhasználó egy oldalon meg tudja tekinteni a játék
 címét, kiadóját, kiadás dátumát, témáját, rövid leírását, értékelését és talán előzetesét is.
-A játékok mellett szeretnénk feltüntetni a típusát pl:singleplayer, multiplayer, illetve milyen
-platformon játszható. Bejelentkezés szempontjából két módot szertnénk megadni. Az első a vendég
+A játékok mellett feltüntetjük majd a típusát pl: singleplayer, multiplayer, illetve milyen
+platformon játszható. Bejelentkezés szempontjából két módot akarunk megadni. Az első a vendég
 bejelentkezés, amely nem menti a felhasználó játék szokásait, a második a regisztrált
 felhasználó, amely már tud ajánlásokat is adni a felhasználó szokásai, keresései alapján.
-Szeretnénk, hogy egy népszerű szoftver legyen a programból ami naprakészsége miatt hasznos
-a felhasználók számára. Ezt a célt úgy szeretnénk elérni, hogy folyamatosan frissítjük a játékok
+Jó lenne elérni, hogy egy népszerű szoftver legyen a programból ami naprakészsége miatt hasznos
+a felhasználók számára. Ezt a célt úgy próbáljuk elérni, hogy folyamatosan frissítjük a játékok
 adatbázisát, értékelését. A program egyszerű kezelése érdekében egy állandó menüt szeretnénk
-a program tetjén. Itt olyan gombokat szeretnénk megadni, mint a vissza, előre, frissítés,
+a program tetjén. Itt olyan gombokat kell megadni, mint a vissza, előre, frissítés,
 kilépés, keresés. A keresés kulcsszavak alapján történik. Lehessen majd téma, platform, kiadás,
 típus alapján keresni.
