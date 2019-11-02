@@ -6,6 +6,38 @@
 
 ## III. Üzleti folyamatok modellje
 
+Napjainkban a domináns játéklisták nagytöbbsége valamilyen nagy vállalat/cég kezében van,
+ezért csak azokat a játékokkal, játék megjelenésekkel fog találkozni a közönség, amelyeket az
+adott cég reklámoztat vagy adja ki a neve alatt. Emiatt hogy ha a tudakozódó "naív", akkor csak
+egy, példuál Origin vagy Ubisoft, játékokkal fog találkozni a játékos, mert számára nem jön 
+információ más játékokról, nem olvas széles körben jártas oldalakat/magazinokat. Nincs sok olyan
+gyártótól független weboldal vagy szoftver, ami a lehető legtöbb játékot képes lenne a felhasználó
+számára megjeleníteni, mind gyártótól, kiadásától, témájától függetlenül. Éppen ezért nagy szükség
+van olyan programra, ami felhasználó barát, teljes mértékben tud azonosulni mind a tájékozatlan
+felhasználóval, mind a tapasztalt játékközönséggel egyaránt. Viszont, éppen ezt a problémát orvosolva
+fejlesztjük ki a jelenlegi projektünk alatt a "Game_Over" programot, aminek a segítségével a
+felhasználó könnyedén képes rengetek játékok között barangolni, gyártótól teljesen függetlenül,
+tehát megadjuk a felhasználóknak azt a fajta szabadságát, hogy képes legyen ténylegesen az 
+ízlésének megfelelő játékokkal találkoznia, ezáltal nem fogja azt érezni, hogy egy adott gyártó
+eröltetve el akarna neki adni valamit, amit nem is szeretne soha kipróbálni. Felhasználóinknak 
+továbbá biztosítunk egy regisztráció/belépés lehetőséget, _ami persze nem kötelező, ha valaki csak
+kipróbálni szeretné az alkalmazásunkat akkor nem kötelezzük rá, hogy csak néhány alkalom miatt
+regisztráljon, ekkor vendégként is beléphet_, ezzel tovább növelve azt az érzetet a játékosokban, hogy teljesen
+személyére vannak szabva az általa kedvelt játékok. Ha valaki nem csak vendégként lép be az 
+alkalmazásunkba, hanem sikeres regisztáció után be is lép, akkor képesek leszünk ajánlani minden 
+nap a felhasználónak 3 darab különböző játékot amiket úgy véltünk, hogy tetszeni fog neki, persze 
+ha esetleg mellélőnénk a találgatásunkkal, akkor nyilvánvalóan lehetősége van az ajánlatokat
+mellőzni. De ha sikerül nekünk olyan játékokat ajánlani már a bejelentkezést követően,
+vagy a játékok barangolása közben olyan játékkal találkozik, ami tetszhet neki, akkor azt jelezve
+bekerül minden regisztrált felhasználónak a saját könyvtárába, ahol bármikor újra megnézheti, felkeresheti
+azokat. Az alkalmazásunkban képes lesz bárki olyan féle játékkeresésre, ami számára lényeges,
+például az adott témájára, kiadójára, kiadási dátumára vagy ha csak az ár a fontos, akkor
+a szerint is képes lesz keresni. Alkalmazásunkat a lehető legszélesebb körben szeretnénk, ha használnák
+az emberek, bárhol, bármikor amikor csak szükségük lenne rá, tudják használni. Ezért igyekszünk 
+olyan felhasználóbarát, gyors, rugalmas, modern kinézetű szoftvert fejleszteni ami eleget tesz
+ezeknek a feltételeknek és bárki csak ajánlani tudná ismerőseinek.
+
+
 ## IV. Követelmények
 
 ## V. Funkcionális terv
