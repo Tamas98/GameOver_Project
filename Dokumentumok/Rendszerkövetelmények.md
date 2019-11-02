@@ -40,6 +40,30 @@ ezeknek a feltételeknek és bárki csak ajánlani tudná ismerőseinek.
 
 ## IV. Követelmények
 
+Mivel a célunk egy sok retegű közönség kiszolgálására alkalmas alkalmazás megírása, ezért biztosítanunk
+kell, hogy olyan felhasználó is tudja könnyedén használni a programunkat, aki még a számitógép
+kezelésében nincsen otthon. Emiatt programunknak könnyen értelmezhetőnek, világosnak, egyértelműnek
+kell hogy legyen. A **felhasználói felület**et, a felhasználó szemszögéből próbáljuk megalkotni, 
+dizájnolni, hogy minél átláthatóbb legyen minden egyes ablak, amiket csak használni fog. Mivel
+ez az alkalmazás teljes mértékben ízléseken alapszik (gondolunk itt a játék ízlésre), ezért 
+biztosítanunk **kell** egyéni profil létrehozást, amit már programunk elindítása után már rögtön 
+ajánlunk is a felhasználóinknak. Így mindenki a maga ízlésének megfelelő játékokkal tud csak 
+találkozni. Illetve ha már regisztrációt kínálunk a felhasználóinknak, akkor egyúttal biztosítanunk 
+kell, hogy képes legyen jelszavának a módosítására is, ha esetleg elfelejtette volna a már 
+korábban megadott jelszavát. Minden felhasználó, _még aki vendégként jelentkezett is be_, 
+legyen lehetősége játékokat megkeresni, a lehető legtöbb szürési lehetőségekkel: kiadó, kiadási dátum, ár, téma.
+Csak a regisztrált felhasználóknak van lehetősége **egyéni könyvtárak nyílvántartására**, ahol minden eddigi
+elmentett játékok szerepelnek, ezáltal bármikor visszakereshet egy már korábban bekedvelt játékot, ha
+esetleg elfelejtette volna egy adott játék nevét például. Legyen képes a felhasználó bizonyos szintű
+visszacsatolásra az adott játékkal kapcsolatban, gondolunk itt az adott **játék értékelésére** egy 1-től
+5-ig tartó skálán. További élmények növelése érdekében legyen képes a felhasználó a keresett 
+játékról szóló előzetesnek a megtekintésére, ami nagyban megkönnyítheti vagy segíthet annak az 
+eldöntésében, hogy szeretné-e kipróbálni az adott játékot. Ha már ott tartunk, hogy sok ember számára kívánjuk létrehozni az alkalmazásunkat, 
+akkor fontos, hogy akadás mentesen fusson, illetve a lehető legkisebb tárhelyet kell hogy foglalja
+a felhasználó számítogépén. További bővítési célunk, hogy az internetről is elérhető legyen a 
+programunk, ezért később fontos lesz, hogy a lehető legkisebb adatforgalomat használja és hogy 
+egyszerre a lehető legtöbb ember tudja használni gördülékenyen, akadás és mindenféle hiba mentesen.
+
 ## V. Funkcionális terv
 
 ## VI. Fizikai környezet
