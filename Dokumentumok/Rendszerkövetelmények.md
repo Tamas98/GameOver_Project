@@ -112,6 +112,24 @@ használjuk. Valamint fxml fájlokat használva szerkesztjük a kinézetet.
 
 ## VII. Architekturális terv
 
+### Architekturális tervezési minta
+
+Korábbi projektjeinkhez hasonlóan itt is az ismert és gyakran alkalmazott MVC, magyar fordításban
+MNV, azaz Modell-Nézet-Vezérlő elveit fogjuk követni. Ez annyit jelent, hogy főleg a projekten 
+dolgozók dolgát nagyban megkönnyíti ez az elv, miszerint 3 fő részre bontjuk az alkalmazásunkat.
+Egyik réteg tartalmazza a megjelenést, azaz a felhasználói felületet amivel a programunk használója
+fog találkozni. Ezen keresztül tud kapcsolatba lépni a felhasználó a további rétegekkel, persze 
+a tudta nélkül, ami képes működtetni az egész szoftvert. A másik réteg az úgynevezett "logikai" 
+réteg, ami a felhasználó által véghezvitt interakciókat értelmezi, dolgozza fel, például jelen 
+esetben a felhasználó valamit beír a játék keresőbe vagy épp a program bármelyik gombjára 
+rákattint. Harmadrészt áll az adattárolást kezelő részből. Ennél a projektünknél a különböző 
+felhasználóktól kapott felhasználói neveket és a hozzátartozó jelszavakat tároljuk, hogy a későbbiekben 
+biztonságosan tudjanak belépni. Adatbázist fogunk még használni a rengetek játékokkal kapcsolatos 
+információk tárolására, amikkel majd a felhasználó találkozhat az alkalmazásunkban. Illetve regisztrált 
+felhasználónként eltároljuk azokat a játékokat személyes könyvtárként, amiket bekedvelt vagyis 
+érdeklődik iránta. Ezzel a tervezési mintával tervezzük megvalósítani a projektünket, amivel 
+reményeink szerint, a kódunkat is nagyban átláthatóbbá fogja tenni.
+
 ## VIII. Tesztterv
 
 A **tesztterv** megintcsak egy olyan fejezetet takar, ami valószínűleg kevésbé tűnik fontos
