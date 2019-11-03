@@ -130,6 +130,25 @@ felhasználónként eltároljuk azokat a játékokat személyes könyvtárként,
 érdeklődik iránta. Ezzel a tervezési mintával tervezzük megvalósítani a projektünket, amivel 
 reményeink szerint, a kódunkat is nagyban átláthatóbbá fogja tenni.
 
+### Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai
+
+A korábban említett, az ismert Modell-Nézet-Vezérlő vezérlő elveit követve alakítjuk ki programunk 
+rétegeit. Amint a felhasználó elindítja a programot, választhat, hogy milyen módon kíván belépni 
+az alkalmazásba, hogy ha egy saját profillal szeretne belépni, akkor bejelentkezhet ha van már 
+regisztrált profilja, ha nincs akkor regisztrálhat. A sikeres regisztrációt követően a felhasználó 
+által begépelt adatok elmentésre kerülnek az adatbázisunkba. Már itt megfigyelhető, hogy miképpen 
+kapcsolódnak az alkalmazott rétegek, miszerint a felhasználó begépel valamit, amit a vezérlőnk 
+feldolgoz és bekerül az adatbázisunkba. Hasonló kapcsolat figyelhető meg a sikeres regisztráció 
+utáni belépést illetően, ahol már az ismételten beírt felhasználói név és a hozzátartozó jelszó 
+lesz ellenőrizve az adatbázisban már megadott adatokkal. Fontos részét képezi az alkalmazásunknak 
+a keresés az adatbázisban lévő játékok között. A keresést lehet szűrni mint kiadási dátummal, 
+kiadója szerint vagy akár témáját illetően is. Ha a keresőfelületbe beír például egy játék címet, 
+akkor azt a programunk készségesen megkeresi, illetve visszaadja a felhasználónak, amennyiben az 
+létezik. Saját konyvtára is lesz a regisztrált felhasználóknak, ahol egy külön adatbázisként kezelve 
+lesznek megtalálhatóak a felhasználó által korábban bekedvelt játékok. Végül de nem utolsó sorban 
+fontos részét képezi az alkalmazásunknak a tesztelését. Fontos, hogy minél több tesztet írjunk 
+a programunkhoz ezáltal biztosítva annak sikerét.
+
 ## VIII. Tesztterv
 
 A **tesztterv** megintcsak egy olyan fejezetet takar, ami valószínűleg kevésbé tűnik fontos
