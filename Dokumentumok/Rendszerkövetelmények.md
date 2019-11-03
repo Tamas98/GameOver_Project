@@ -149,6 +149,14 @@ lesznek megtalálhatóak a felhasználó által korábban bekedvelt játékok. V
 fontos részét képezi az alkalmazásunknak a tesztelését. Fontos, hogy minél több tesztet írjunk 
 a programunkhoz ezáltal biztosítva annak sikerét.
 
+### Változások kezelése
+
+Rendszerünk fő céljai között szerepel az, hogy bármikor, bárki által hozzáférhető legyen a programunk. 
+Fontos számunkra, hogy tiszta, átlátható kódot írjunk, illetve többek között a rétegelt architektura 
+is segít ebben. Azért fontos, hogy átlátható kódot irjunk, mert esetleges csapatbővítéskor vagy 
+ha valami kód részlet megváltoztatása nagyon szükségszerű, akkor az könnyedén, kevés időbefektetéssel 
+történjen.
+
 ## VIII. Tesztterv
 
 A **tesztterv** megintcsak egy olyan fejezetet takar, ami valószínűleg kevésbé tűnik fontos
