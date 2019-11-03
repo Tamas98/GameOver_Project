@@ -157,6 +157,14 @@ is segít ebben. Azért fontos, hogy átlátható kódot irjunk, mert esetleges 
 ha valami kód részlet megváltoztatása nagyon szükségszerű, akkor az könnyedén, kevés időbefektetéssel 
 történjen.
 
+### Rendszer bővíthetősége
+
+Mivel napjainkban napról napra rengetek játékmegjelenésről beszélhetünk, ezért fontos tényező az, 
+hogy ezzel együtt folyamatosan tudjuk bővíteni a programunkat. Többek között könnyedén bővíthető 
+az alkalmazásunk keresési szűrítők által, aminek a segítségevel a felhasználók pontosabban rátudnak 
+keresni egy-egy játékra. Minél több és szélesebb a játékbázisunk, annál nagyobb a valószínűsége, 
+hogy a szoftverünk a lehető legtöbb kezek között megfog fordulni.
+
 ## VIII. Tesztterv
 
 A **tesztterv** megintcsak egy olyan fejezetet takar, ami valószínűleg kevésbé tűnik fontos
