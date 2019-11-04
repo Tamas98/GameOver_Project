@@ -2,6 +2,19 @@
 
 ## I. A rendszer célja
 
+Rendszerünk célja elsősorban az lenne, hogy minden játékosnak segítsünk
+megtalálni a számára megfelelő számítógépes játékot,amivel kikapcsolódhat
+egy hosszú és fárasztó nap után, vagy esetleg elütheti vele a szabadidejét.
+Céljaink közé tartozik biztosítani a felhasználók számára a saját kedvenceik
+gyűjtését, illetve azon játékok gyűjtését is, melyeket egyáltalán nem kedvelnek.
+Ezen felül szeretnénk tágítani ügyfeleink látókörét is azzal, hogy a bejelentkezést
+követően az adott felhasználó, az általa leggyakrabban megtekintett fajtába tartozó
+játékokból ajánlunk neki 3 darabot, melyekkel még nem találkozott az alkalmazásban
+Szeretnénk,ha rendszerünkben a navigálás egyszerű és gyors lenne, ezért egy 
+felső menüvel képzeltük el az átirányítások megvalósítását.Privát szférát kívánunk
+biztosítani felhasználóinknak,ennek érdekében pedig egy bejelentkezési lehetőséget
+is biztosítunk számukra.
+
 ## II. Projekt terv
 
 ### Projektszerepkörök, felelősségek
@@ -89,9 +102,40 @@ egyszerre a lehető legtöbb ember tudja használni gördülékenyen, akadás é
 
 ## V. Funkcionális terv
 
+A rendszer fejlesztésének elsődleges célja, ahogyan azt már az I. fejezetben
+is említettük, a játékosok látókörének szélesítése, illetve,hogy mindenki
+megtalálhassa a számára megfelelő játékot. Terveink szerint rendszerünk
+mindenki számára elérhető lesz, akár otthoni, akár konyvtári vagy internetkávézói
+környezetben is. Fiatalabb és idősebb korosztályok számára is egyaránt
+ajánljuk használatát, hiszen minden korosztály számára fontos a játék,
+a kikapcsolódás, a szórakozás. Szeretnénk elérni azt, hogy aki kezébe
+veszi az alkalmazásunkat, az úgy álljon fel előlle, hogy megtalálta azt
+a játékot amit szeretett volna vagy talált valami olyat, amilyenre vágyott.
+Úgy terveztük felhasználói felületetünkiet, hogy az azok számára is egyszerű
+és érthető legyen, akinek még sosem volt dolga esetleg előtte hasonlóval.
+Letisztult és egyszerű dizájnt terveztünk, igyekeztünk csak annyira bonyolítani
+a dolgokat, amennyire muszáj. Emiatt is kényelmes  és vonzó a felhasználók
+számára használata, illetve nagy játék adatbázisunk is, amiben szinte az összes
+jelenleg már megjelent és bejelentett, de még nem megjelent játék is megtalálható.
+A maximális felhasználói élmény elérése érdekében rendszerünk igyekszik
+az apróbb hibákat a háttérben kezelni, hogy ne zavarja meg a felhasználók
+böngészését. Nagyobb hibák esetén azonban kénytelenek vagyunk a felhasználó
+számára jelezni, hogy valamilyen hiba történt. Terveink szerint a fejlesztő
+csapat a hiba mindkét fajtája esetén jelentést kap, amit utána igyekszenek
+minél előbb kijavítani.
+
+
 ## VI. Fizikai környezet
 
-### Operációs rendszer - Linux, Windows
+### Adatok tárolása - Hibernate
+
+Szükségünk van legalább 2 táblára, melyek közül egyikben a felhasználók
+adatait, míg a másik a játékok adatait tárolja. Hogy elérjük adatbázisunkat
+egy objektum-relációs leképezést megvalósító programkönyvtárat, Hibernate-t
+fogunk használni, melynek segítségével az osztályainkat és a relációs
+adatbázisunk tábláit képezzük egymmásba.
+
+### Operációs rendszer - Linux, Windows,
 
 A programot szeretnénk ha egyaránt lehetne futtatni Linuxon és Windowson is, így reméljük
 nagyobb népszerűségre tesz szert a hordozhatósága miatt. Linuxra elég egyszerűen eltudjuk
@@ -108,7 +152,9 @@ a csomag.
 ### Felhasználói felület - JavaFX
 
 Ahhoz, hogy szép és elfogadható kinezetű programot kapjunk a JavaFX grafikus technológiát
-használjuk. Valamint fxml fájlokat használva szerkesztjük a kinézetet.
+használjuk. Valamint fxml fájlokat használva szerkesztjük a kinézetet, amiknek könnyű,
+grafikus felületű szerkesztéséhez a JavaFX scene builder alkalmazását fogjuk
+használni, mely számos előnnyel rendelkezik.
 
 ## VII. Architekturális terv
 
@@ -163,7 +209,8 @@ Mivel napjainkban napról napra rengetek játékmegjelenésről beszélhetünk, 
 hogy ezzel együtt folyamatosan tudjuk bővíteni a programunkat. Többek között könnyedén bővíthető 
 az alkalmazásunk keresési szűrők által, aminek a segítségevel a felhasználók pontosabban rá tudnak 
 keresni egy-egy játékra. Minél több és szélesebb a játékbázisunk, annál nagyobb a valószínűsége, 
-hogy a szoftverünk a lehető legtöbb kezek között megfog fordulni.
+hogy a szoftverünk a lehető legtöbb kezek között megfog fordulni,ezért igyekszünk alkalmazásunkat
+úgy megtervezni, hogy bővíthetősége egyszerű és könnyen kivitelezhető legyen.
 
 ## VIII. Tesztterv
 
