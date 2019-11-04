@@ -4,14 +4,14 @@
 
 ## II. Projekt terv
 
-###Projektszerepkörök, felelősségek
+### Projektszerepkörök, felelősségek
 
 | Szerepkör     | Felelősség   |
 | :-----------: | :----------: |
 | Felhasználók  | valami       |
 | Fejlesztők    | valami       |
 
-###Projektmunkások és felelősségeik
+### Projektmunkások és felelősségeik
 
 | Projektmunkások | Felelősség   |
 | :-------------: | :----------: |
@@ -20,7 +20,7 @@
 | Erdei Kristóf   | valami       |
 | Tóth Csaba      | valami       |
 
-###Ütemterv
+### Ütemterv
 
 | Dátum      | Haladás                                           |
 | :--------: | :-----------------------------------------------: |
@@ -91,21 +91,21 @@ egyszerre a lehető legtöbb ember tudja használni gördülékenyen, akadás é
 
 ## VI. Fizikai környezet
 
-###Operációs rendszer - Linux, Windows
+### Operációs rendszer - Linux, Windows
 
 A programot szeretnénk ha egyaránt lehetne futtatni Linuxon és Windowson is, így reméljük
 nagyobb népszerűségre tesz szert a hordozhatósága miatt. Linuxra elég egyszerűen eltudjuk
 készíteni, mivel ebben már van a csapatnak tapasztalata. A kihívás a Windows-os problémamentes
 futtatás, mivel ezt még eddig nem próbáltuk.
 
-###Programozási nyelv - Java
+### Programozási nyelv - Java
 
 Programozási nyelv egyszerűen a Java lesz, mivel ezaz a nyelv amiben mindenkinek van
 elég tapasztalata egy szoftver elkészítéséhez. Pontosan a Java SE Development Kit 11-et fogjuk
 alkalmazni. Tehát minden gép amelyen ezt a szoftvert szeretnénk használni elengedhetetlen ez
 a csomag.
 
-###Felhasználói felület - JavaFX
+### Felhasználói felület - JavaFX
 
 Ahhoz, hogy szép és elfogadható kinezetű programot kapjunk a JavaFX grafikus technológiát
 használjuk. Valamint fxml fájlokat használva szerkesztjük a kinézetet.
@@ -144,9 +144,9 @@ lesz ellenőrizve az adatbázisban már megadott adatokkal. Fontos részét kép
 a keresés az adatbázisban lévő játékok között. A keresést lehet szűrni mint kiadási dátummal, 
 kiadója szerint vagy akár témáját illetően is. Ha a keresőfelületbe beír például egy játék címet, 
 akkor azt a programunk készségesen megkeresi, illetve visszaadja a felhasználónak, amennyiben az 
-létezik. Saját konyvtára is lesz a regisztrált felhasználóknak, ahol egy külön adatbázisként kezelve 
+létezik. Saját könyvtára is lesz a regisztrált felhasználóknak, ahol egy külön adatbázisként kezelve 
 lesznek megtalálhatóak a felhasználó által korábban bekedvelt játékok. Végül de nem utolsó sorban 
-fontos részét képezi az alkalmazásunknak a tesztelését. Fontos, hogy minél több tesztet írjunk 
+fontos részét képezi az alkalmazásunknak a tesztelés. Fontos, hogy minél több tesztet írjunk 
 a programunkhoz ezáltal biztosítva annak sikerét.
 
 ### Változások kezelése
@@ -161,7 +161,7 @@ történjen.
 
 Mivel napjainkban napról napra rengetek játékmegjelenésről beszélhetünk, ezért fontos tényező az, 
 hogy ezzel együtt folyamatosan tudjuk bővíteni a programunkat. Többek között könnyedén bővíthető 
-az alkalmazásunk keresési szűrítők által, aminek a segítségevel a felhasználók pontosabban rátudnak 
+az alkalmazásunk keresési szűrők által, aminek a segítségevel a felhasználók pontosabban rá tudnak 
 keresni egy-egy játékra. Minél több és szélesebb a játékbázisunk, annál nagyobb a valószínűsége, 
 hogy a szoftverünk a lehető legtöbb kezek között megfog fordulni.
 
