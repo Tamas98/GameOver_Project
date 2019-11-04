@@ -3,16 +3,16 @@
 ## I. A rendszer célja
 
 Rendszerünk célja elsősorban az lenne, hogy minden játékosnak segítsünk
-megtalálni a számára megfelelő számítógépes játékot,amivel kikapcsolódhat
+megtalálni a számára megfelelő számítógépes játékot, amivel kikapcsolódhat
 egy hosszú és fárasztó nap után, vagy esetleg elütheti vele a szabadidejét.
 Céljaink közé tartozik biztosítani a felhasználók számára a saját kedvenceik
 gyűjtését, illetve azon játékok gyűjtését is, melyeket egyáltalán nem kedvelnek.
 Ezen felül szeretnénk tágítani ügyfeleink látókörét is azzal, hogy a bejelentkezést
 követően az adott felhasználó, az általa leggyakrabban megtekintett fajtába tartozó
 játékokból ajánlunk neki 3 darabot, melyekkel még nem találkozott az alkalmazásban
-Szeretnénk,ha rendszerünkben a navigálás egyszerű és gyors lenne, ezért egy 
-felső menüvel képzeltük el az átirányítások megvalósítását.Privát szférát kívánunk
-biztosítani felhasználóinknak,ennek érdekében pedig egy bejelentkezési lehetőséget
+Szeretnénk, ha rendszerünkben a navigálás egyszerű és gyors lenne, ezért egy 
+felső menüvel képzeltük el az átirányítások megvalósítását. Privát szférát kívánunk
+biztosítani felhasználóinknak, ennek érdekében pedig egy bejelentkezési lehetőséget
 is biztosítunk számukra.
 
 ## II. Projekt terv
@@ -103,15 +103,15 @@ egyszerre a lehető legtöbb ember tudja használni gördülékenyen, akadás é
 ## V. Funkcionális terv
 
 A rendszer fejlesztésének elsődleges célja, ahogyan azt már az I. fejezetben
-is említettük, a játékosok látókörének szélesítése, illetve,hogy mindenki
+is említettük, a játékosok látókörének szélesítése, illetve, hogy mindenki
 megtalálhassa a számára megfelelő játékot. Terveink szerint rendszerünk
 mindenki számára elérhető lesz, akár otthoni, akár konyvtári vagy internetkávézói
 környezetben is. Fiatalabb és idősebb korosztályok számára is egyaránt
 ajánljuk használatát, hiszen minden korosztály számára fontos a játék,
 a kikapcsolódás, a szórakozás. Szeretnénk elérni azt, hogy aki kezébe
-veszi az alkalmazásunkat, az úgy álljon fel előlle, hogy megtalálta azt
+veszi az alkalmazásunkat, az úgy álljon fel előle, hogy megtalálta azt
 a játékot amit szeretett volna vagy talált valami olyat, amilyenre vágyott.
-Úgy terveztük felhasználói felületetünkiet, hogy az azok számára is egyszerű
+Úgy terveztük felhasználói felületetünket, hogy az azok számára is egyszerű
 és érthető legyen, akinek még sosem volt dolga esetleg előtte hasonlóval.
 Letisztult és egyszerű dizájnt terveztünk, igyekeztünk csak annyira bonyolítani
 a dolgokat, amennyire muszáj. Emiatt is kényelmes  és vonzó a felhasználók
