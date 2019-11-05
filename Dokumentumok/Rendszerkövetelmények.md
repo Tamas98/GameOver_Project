@@ -133,7 +133,7 @@ Szükségünk van legalább 2 táblára, melyek közül egyikben a felhasználó
 adatait, míg a másik a játékok adatait tárolja. Hogy elérjük adatbázisunkat
 egy objektum-relációs leképezést megvalósító programkönyvtárat, Hibernate-t
 fogunk használni, melynek segítségével az osztályainkat és a relációs
-adatbázisunk tábláit képezzük egymmásba.
+adatbázisunk tábláit képezzük egymásba.
 
 ### Operációs rendszer - Linux, Windows,
 
