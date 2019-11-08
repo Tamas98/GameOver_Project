@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 public class MainApplication extends Application {
 
     @Override
+
     public void start(Stage primaryStage) throws Exception{
         Main.stage = primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Udvozlo.fxml"));
