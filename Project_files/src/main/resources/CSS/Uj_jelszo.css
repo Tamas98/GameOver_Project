@@ -1,0 +1,25 @@
+.root{
+    -fx-background-color: #D3D3D3;
+}
+.text-field{
+    -fx-background-color: #696969;
+    -fx-text-fill: white;
+    -fx-font-family: Arial;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+
+}
+#saveButt{
+    -fx-background-color: #696969;
+}
+#saveButt:hover{
+    -fx-background-color: #b9865d;
+}
+#userName:focused{
+    -fx-background-color: #989898;
+
+
+}
+#newPassw:focused{
+    -fx-background-color: #989898;
+}

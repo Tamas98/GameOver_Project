@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane stylesheets="@../CSS/Uj_jelszo.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Uj_jelszo">
+   <children>
+      <Pane id="newPasswPane" fx:id="newPasswPane" prefHeight="200.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="234.0" layoutY="20.0" text="Új jelszó">
+               <font>
+                  <Font name="Arial" size="35.0" />
+               </font>
+            </Label>
+            <TextField id="userName" fx:id="userName" layoutX="207.0" layoutY="100.0" prefHeight="31.0" prefWidth="188.0" promptText="Felhasználónév"></TextField>
+            <TextField id="newPassw" fx:id="newPassw" layoutX="207.0" layoutY="151.0" prefHeight="31.0" prefWidth="188.0" promptText="Új jelszó..."></TextField>
+            <Button onAction="#saveButtonClicked" id="saveButt" fx:id="saveButt" layoutX="464.0" layoutY="155.0" mnemonicParsing="false" text="Mentés" textFill="white">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

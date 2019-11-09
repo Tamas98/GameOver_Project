@@ -10,7 +10,19 @@ import javafx.stage.Stage;
 
 public class Udvozlo {
     @FXML
-    Button regButt;
+    Button regButt,newPassButt;
+
+    public void newPasswButtonClicked() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Uj_jelszo.fxml"));
+        Stage regStage = new Stage();
+        regStage.setTitle("Jelszó megváltoztatása");
+        regStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        regStage.setScene(new Scene(newUser, 600, 200));
+        regStage.show();
+        Stage stage = (Stage) regButt.getScene().getWindow();
+        stage.close();
+
+    }
 
     public void regButtonClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Regisztracio.fxml"));
