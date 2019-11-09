@@ -1,0 +1,6 @@
+.button{
+    -fx-background-color: #696969;
+}
+.button:hover{
+    -fx-background-color: #b9865d;
+}
