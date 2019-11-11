@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane stylesheets="@../CSS/Udvozlo.css" fx:controller="Controllers.Udvozlo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/Udvozlo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Udvozlo">
    <children>
       <Pane id="signPane" fx:id="signPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;">
          <children>
@@ -23,17 +24,17 @@
                   <Font name="Arial" size="12.0" />
                </font>
             </PasswordField>
-            <Button id="signIn" fx:id="signIn" layoutX="241.0" layoutY="238.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="118.0" text="Bejelentkezés" textFill="WHITE">
+            <Button id="signInButt" fx:id="signInButt" layoutX="241.0" layoutY="238.0" mnemonicParsing="false" onAction="#signInButtClicked" prefHeight="40.0" prefWidth="118.0" text="Bejelentkezés" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
             </Button>
-            <Button onAction="#newPasswButtonClicked" id="newPassButt" fx:id="newPassButt" alignment="CENTER" layoutX="14.0" layoutY="359.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="99.0" text="Új jelszó" textFill="WHITE" visible="true">
+            <Button id="newPassButt" fx:id="newPassButt" alignment="CENTER" layoutX="14.0" layoutY="359.0" mnemonicParsing="false" onAction="#newPasswButtonClicked" prefHeight="27.0" prefWidth="99.0" text="Új jelszó" textFill="WHITE" visible="true">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
             </Button>
-            <Button onAction="#regButtonClicked" id="regButt" fx:id="regButt" layoutX="487.0" layoutY="359.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="99.0" text="Regisztáció" textAlignment="CENTER" textFill="WHITE">
+            <Button id="regButt" fx:id="regButt" layoutX="487.0" layoutY="359.0" mnemonicParsing="false" onAction="#regButtonClicked" prefHeight="27.0" prefWidth="99.0" text="Regisztáció" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
