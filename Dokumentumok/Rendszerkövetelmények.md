@@ -21,17 +21,17 @@ is biztosítunk számukra.
 
 | Szerepkör     | Felelősség   |
 | :-----------: | :----------: |
-| Felhasználók  | valami       |
-| Fejlesztők    | valami       |
+| Felhasználók  | Szakszerűen használják a programot. |
+| Fejlesztők    | Legjobb tudásuk szerint megalkotják a programot amit elvállaltak. |
 
 ### Projektmunkások és felelősségeik
 
 | Projektmunkások | Felelősség   |
 | :-------------: | :----------: |
-| Tarcsa Tamás    | valami       |
-| Bakos Bálint    | valami       |
-| Erdei Kristóf   | valami       |
-| Tóth Csaba      | valami       |
+| Tarcsa Tamás    | Back end       |
+| Bakos Bálint    | Back end       |
+| Erdei Kristóf   | Front end       |
+| Tóth Csaba      | Front end       |
 
 ### Ütemterv
 
