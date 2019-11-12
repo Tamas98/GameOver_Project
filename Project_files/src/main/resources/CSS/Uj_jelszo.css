@@ -1,25 +1,25 @@
 .root{
-    -fx-background-color: #D3D3D3;
+    -fx-background-color: #FFFFFF;
 }
 .text-field{
-    -fx-background-color: #696969;
     -fx-text-fill: white;
     -fx-font-family: Arial;
     -fx-font-size: 15px;
     -fx-font-weight: bold;
-
 }
+
 #saveButton{
-    -fx-background-color: #696969;
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #6747CD;
+    -fx-text-fill: #6747CD;
+    -fx-border-radius: 3px;
 }
+
 #saveButton:hover{
-    -fx-background-color: #b9865d;
-}
-#userName:focused{
-    -fx-background-color: #989898;
-
-
-}
-#newPassw:focused{
-    -fx-background-color: #989898;
+    -fx-background-color: #6747CD;
+    -fx-border-color: #6747CD;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 3px;
 }

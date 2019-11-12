@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.shape.*?>
 <?import java.lang.*?>
@@ -12,18 +13,22 @@
    <children>
       <Pane id="newPasswPane" fx:id="newPasswPane" prefHeight="300.0" prefWidth="600.0">
          <children>
-            <Label layoutX="234.0" layoutY="20.0" text="Új jelszó">
+            <Label layoutX="241.0" layoutY="32.0" text="Új jelszó" textFill="#545454">
                <font>
-                  <Font name="Arial" size="35.0" />
+                  <Font name="Impact" size="35.0" />
                </font>
             </Label>
-            <TextField id="userName" fx:id="userName" layoutX="206.0" layoutY="119.0" prefHeight="31.0" prefWidth="188.0" promptText="Felhasználónév" />
-            <TextField id="newPassw" fx:id="newPassw" layoutX="206.0" layoutY="169.0" prefHeight="31.0" prefWidth="188.0" promptText="Új jelszó" />
-            <Button id="saveButton" fx:id="saveButton" layoutX="250.0" layoutY="235.0" mnemonicParsing="false" onAction="#saveButtonClicked" prefHeight="31.0" prefWidth="101.0" text="Mentés" textFill="white">
+            <JFXButton id="saveButton" fx:id="saveButton" layoutX="206.0" layoutY="242.0" onAction="#saveButtonClicked" prefHeight="33.0" prefWidth="188.0" text="Mentés" />
+            <JFXTextField id="userName" fx:id="userName" focusColor="#6747cd" labelFloat="true" layoutX="207.0" layoutY="117.0" promptText="Felhasználónév" unFocusColor="#6747cd">
                <font>
-                  <Font name="Arial" size="15.0" />
+                  <Font name="Impact" size="14.0" />
                </font>
-            </Button>
+            </JFXTextField>
+            <JFXTextField id="newPassw" fx:id="newPassw" focusColor="#6747cd" labelFloat="true" layoutX="207.0" layoutY="172.0" promptText="Új jelszó" unFocusColor="#6747cd">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+            </JFXTextField>
          </children>
       </Pane>
    </children>
