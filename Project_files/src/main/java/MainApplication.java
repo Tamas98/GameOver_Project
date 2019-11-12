@@ -15,6 +15,7 @@ public class MainApplication extends Application {
         primaryStage.setTitle("Game_Over");
         primaryStage.getIcons().add(new Image("/Pictures/Icon.png"));
         primaryStage.setScene(new Scene(root, 480, 720));
+        primaryStage.setResizable(false);
         primaryStage.show();
 
     }

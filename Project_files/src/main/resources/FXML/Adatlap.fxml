@@ -11,12 +11,22 @@
       <Pane prefHeight="600.0" prefWidth="810.0">
          <children>
             <Button id="backButton" fx:id="backButton" layoutX="14.0" layoutY="559.0" mnemonicParsing="false" onAction="#backButtonClicked" text="Vissza" />
-            <Text layoutX="318.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cím" />
             <ImageView fitHeight="200.0" fitWidth="300.0" layoutX="104.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Pictures/r6s.png" />
                </image>
             </ImageView>
+            <Text layoutX="318.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tom Clancy's Rainbow Six Siege" />
+            <Text layoutX="442.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="December 1, 2015" />
+            <Text layoutX="347.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Megjelenés:" />
+            <Text layoutX="347.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kiadó:" textAlignment="RIGHT" wrappingWidth="66.08544921875" />
+            <Text layoutX="347.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Platformok:" textAlignment="RIGHT" wrappingWidth="66.08544921875" />
+            <Text layoutX="347.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Műfaj:" textAlignment="RIGHT" wrappingWidth="66.08544921875" />
+            <Text layoutX="442.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ubisoft" />
+            <Text layoutX="442.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PC, PS4, XBOX ONE" />
+            <Text layoutX="442.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tactical shooter" />
+            <Text layoutX="347.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trailer:" textAlignment="RIGHT" wrappingWidth="66.08544921875" />
+            <TextArea layoutX="318.0" layoutY="277.0" prefHeight="217.0" prefWidth="479.0" text="A Ubisoft multiplayer taktikai akciójátéka, &#10;melyben terrorelhárítók csapatai esnek egymásnak. &#10;A Ubisoft Rainbow Six: Patriots néven szerette volna folytatni a népszerű szériát, &#10;ám saját bevallásuk szerint a koncepció nem nyerte el a játékosok tetszését, &#10;ezért változtattak a recepten és így született meg a Rainbow Six: Siege ötlete. &#10;Ebben a franchise eddigi részeihez hasonlóan ismét egy magasan képzett &#10;csapat tagjaként kell helytállnunk a küldetések során, &#10;viszont nagyobb hangsúlyt kapott a multiplayer és a pályák rombolhatósága, &#10;mint eddig bármikor. A pozitív végeredményhez - például egy túsz kiszabadításához - &#10;elengedhetetlen a csapatmunka, viszont a Ubisoft nem szúr ki azokkal sem, &#10;akik nem kedvelik az online élményeket, &#10;hiszen nekik szól a Rainbow Six: Siege egyjátékos kihívásokat tartalmazó része." />
          </children></Pane>
    </children>
 </AnchorPane>

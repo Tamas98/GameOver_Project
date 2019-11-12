@@ -9,10 +9,10 @@
     -fx-font-weight: bold;
 
 }
-#saveButt{
+#saveButton{
     -fx-background-color: #696969;
 }
-#saveButt:hover{
+#saveButton:hover{
     -fx-background-color: #b9865d;
 }
 #userName:focused{

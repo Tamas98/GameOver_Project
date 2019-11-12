@@ -18,9 +18,9 @@
 #registPasw:focused{
     -fx-background-color: #989898;
 }
-#registButt{
+#registButton{
     -fx-background-color: #696969;
 }
-#registButt:hover{
+#registButton:hover{
     -fx-background-color: #b9865d;
 }

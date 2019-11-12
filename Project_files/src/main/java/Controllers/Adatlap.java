@@ -19,6 +19,7 @@ public class Adatlap {
         dataStage.setTitle("Főképrenyő");
         dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
         dataStage.setScene(new Scene(newUser, 960, 720));
+        dataStage.setResizable(false);
         dataStage.show();
         Stage stage = (Stage) backButton.getScene().getWindow();
         stage.close();

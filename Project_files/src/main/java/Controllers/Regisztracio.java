@@ -1,6 +1,5 @@
 package Controllers;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -15,7 +14,7 @@ import javafx.stage.Stage;
 public class Regisztracio {
 
     @FXML
-    Button registButt;
+    Button registButton;
     @FXML
     TextField registName;
     @FXML
@@ -30,11 +29,11 @@ public class Regisztracio {
                 warningName.setVisible(true);
                 warningPassw.setVisible(true);
 
-        }else if(registName.getText().equals("")){
+        } else if(registName.getText().equals("")) {
            warningName.setVisible(true);
-        }else if(registPasw.getText().equals("")){
+        } else if(registPasw.getText().equals("")) {
             warningPassw.setVisible(true);
-        }else {
+        } else {
             backToLogin();
         }
     }
@@ -45,9 +44,11 @@ public class Regisztracio {
         regStage.setTitle("Game_Over");
         regStage.getIcons().add(new Image("/Pictures/Icon.png"));
         regStage.setScene(new Scene(newUser, 480, 720));
+        regStage.setResizable(false);
         regStage.show();
-        Stage stage = (Stage) registButt.getScene().getWindow();
+        Stage stage = (Stage) registButton.getScene().getWindow();
         stage.close();
+
     }
 
 }

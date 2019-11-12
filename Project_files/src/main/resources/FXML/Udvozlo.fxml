@@ -24,22 +24,22 @@
                   <Font name="Arial" size="15.0" />
                </font>
             </PasswordField>
-            <Button id="signInButt" fx:id="signInButt" layoutX="181.0" layoutY="388.0" mnemonicParsing="false" onAction="#signInButtClicked" prefHeight="40.0" prefWidth="118.0" text="Bejelentkezés" textFill="WHITE">
+            <Button id="signInButton" fx:id="signInButton" layoutX="181.0" layoutY="388.0" mnemonicParsing="false" onAction="#signInButtonClicked" prefHeight="40.0" prefWidth="118.0" text="Bejelentkezés" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
             </Button>
-            <Button id="newPassButt" fx:id="newPassButt" alignment="CENTER" layoutX="48.0" layoutY="568.0" mnemonicParsing="false" onAction="#newPasswButtonClicked" prefHeight="27.0" prefWidth="99.0" text="Új jelszó" textFill="WHITE" visible="true">
+            <Button id="newPassButton" fx:id="newPassButton" alignment="CENTER" layoutX="48.0" layoutY="568.0" mnemonicParsing="false" onAction="#newPasswButtonClicked" prefHeight="27.0" prefWidth="99.0" text="Új jelszó" textFill="WHITE" visible="true">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
             </Button>
-            <Button id="regButt" fx:id="regButt" layoutX="333.0" layoutY="568.0" mnemonicParsing="false" onAction="#regButtonClicked" prefHeight="27.0" prefWidth="99.0" text="Regisztáció" textAlignment="CENTER" textFill="WHITE">
+            <Button id="regButton" fx:id="regButton" layoutX="333.0" layoutY="568.0" mnemonicParsing="false" onAction="#regButtonClicked" prefHeight="27.0" prefWidth="99.0" text="Regisztáció" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
             </Button>
-            <Button id="signInGuest" fx:id="signInGuest" layoutX="155.0" layoutY="450.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="171.0" text="Bejelentkezés vendégként" textAlignment="CENTER" textFill="WHITE">
+            <Button id="signInGuestButton" fx:id="signInGuestButton" layoutX="155.0" layoutY="450.0" mnemonicParsing="false" onAction="#signInGuestButtonClicked" prefHeight="27.0" prefWidth="171.0" text="Bejelentkezés vendégként" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Arial" size="13.0" />
                </font>

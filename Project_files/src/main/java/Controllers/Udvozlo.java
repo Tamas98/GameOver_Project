@@ -9,8 +9,9 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class Udvozlo {
+
     @FXML
-    Button regButt,newPassButt, signInButt;
+    Button regButton, newPassButton, signInButton, signInGuestButton;
 
     public void newPasswButtonClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Uj_jelszo.fxml"));
@@ -18,8 +19,9 @@ public class Udvozlo {
         regStage.setTitle("Jelszó megváltoztatása");
         regStage.getIcons().add(new Image("/Pictures/Icon.png"));
         regStage.setScene(new Scene(newUser, 600, 300));
+        regStage.setResizable(false);
         regStage.show();
-        Stage stage = (Stage) regButt.getScene().getWindow();
+        Stage stage = (Stage) newPassButton.getScene().getWindow();
         stage.close();
 
     }
@@ -30,20 +32,35 @@ public class Udvozlo {
         regStage.setTitle("Regisztráció");
         regStage.getIcons().add(new Image("/Pictures/Icon.png"));
         regStage.setScene(new Scene(newUser, 600, 300));
+        regStage.setResizable(false);
         regStage.show();
-        Stage stage = (Stage) regButt.getScene().getWindow();
+        Stage stage = (Stage) regButton.getScene().getWindow();
         stage.close();
 
     }
 
-    public void signInButtClicked() throws Exception {
+    public void signInButtonClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Fokepernyo.fxml"));
         Stage mainStage = new Stage();
         mainStage.setTitle("Game_Over");
         mainStage.getIcons().add(new Image("/Pictures/Icon.png"));
         mainStage.setScene(new Scene(newUser, 960, 720));
+        mainStage.setResizable(false);
         mainStage.show();
-        Stage stage = (Stage) signInButt.getScene().getWindow();
+        Stage stage = (Stage) signInButton.getScene().getWindow();
         stage.close();
     }
+
+    public void signInGuestButtonClicked() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Fokepernyo.fxml"));
+        Stage mainStage = new Stage();
+        mainStage.setTitle("Game_Over");
+        mainStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        mainStage.setScene(new Scene(newUser, 960, 720));
+        mainStage.setResizable(false);
+        mainStage.show();
+        Stage stage = (Stage) signInGuestButton.getScene().getWindow();
+        stage.close();
+    }
+
 }

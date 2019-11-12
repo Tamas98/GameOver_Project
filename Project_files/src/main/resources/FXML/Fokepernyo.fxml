@@ -11,14 +11,45 @@
       <Pane prefHeight="720.0" prefWidth="960.0">
          <children>
             <Separator layoutX="142.0" orientation="VERTICAL" prefHeight="720.0" prefWidth="6.0" />
-            <Button id="quitButt" fx:id="quitButt" layoutX="31.0" layoutY="665.0" mnemonicParsing="false" onAction="#quitButtClicked" text="Kijelentkezés" />
+            <Button id="signOutButton" fx:id="signOutButton" layoutX="31.0" layoutY="665.0" mnemonicParsing="false" onAction="#signOutButtonClicked" text="Kijelentkezés" />
             <Text layoutX="174.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajánló" />
-            <ImageView id="elsoKep" fx:id="elsoKep" fitHeight="190.0" fitWidth="285.0" layoutX="174.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="174.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Pictures/r6s.png" />
                </image>
             </ImageView>
             <Button id="dataButton" fx:id="dataButton" layoutX="215.0" layoutY="292.0" mnemonicParsing="false" onAction="#dataButtonClicked" text="Adatlap" />
+            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="337.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/pubg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="500.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/cod.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="174.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Böngészés" />
+            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="174.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/al.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="337.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/cod.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="500.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/csgo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="665.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/fifa.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>

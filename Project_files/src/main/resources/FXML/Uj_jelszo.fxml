@@ -19,7 +19,7 @@
             </Label>
             <TextField id="userName" fx:id="userName" layoutX="206.0" layoutY="119.0" prefHeight="31.0" prefWidth="188.0" promptText="Felhasználónév" />
             <TextField id="newPassw" fx:id="newPassw" layoutX="206.0" layoutY="169.0" prefHeight="31.0" prefWidth="188.0" promptText="Új jelszó" />
-            <Button id="saveButt" fx:id="saveButt" layoutX="250.0" layoutY="235.0" mnemonicParsing="false" onAction="#saveButtonClicked" prefHeight="31.0" prefWidth="101.0" text="Mentés" textFill="white">
+            <Button id="saveButton" fx:id="saveButton" layoutX="250.0" layoutY="235.0" mnemonicParsing="false" onAction="#saveButtonClicked" prefHeight="31.0" prefWidth="101.0" text="Mentés" textFill="white">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
