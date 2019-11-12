@@ -13,7 +13,7 @@ public class Udvozlo {
     @FXML
     Button regButton, newPassButton, signInButton, signInGuestButton;
 
-    public void newPasswButtonClicked() throws Exception {
+    public void newPassButtonClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Uj_jelszo.fxml"));
         Stage regStage = new Stage();
         regStage.setTitle("Jelszó megváltoztatása");

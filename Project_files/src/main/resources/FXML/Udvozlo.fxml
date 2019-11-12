@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.text.*?>
@@ -7,43 +8,19 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="480.0" stylesheets="@../CSS/Udvozlo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Udvozlo">
    <children>
-      <Pane id="signPane" fx:id="signPane" prefHeight="720.0" prefWidth="480.0" style="-fx-background-color: #D3D3D3;">
+      <Pane id="signPane" fx:id="signPane" prefHeight="720.0" prefWidth="480.0">
          <children>
-            <Text layoutX="122.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game_Over" textAlignment="CENTER" wrappingWidth="236.779296875">
+            <Text fill="#b2aaaa" layoutX="122.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game_Over" textAlignment="CENTER" wrappingWidth="236.779296875">
                <font>
                   <Font name="Arial Bold" size="35.0" />
                </font>
             </Text>
-            <TextField id="userName" fx:id="userName" layoutX="147.0" layoutY="242.0" prefHeight="39.0" prefWidth="186.0" promptText="Felhasználónév">
-               <font>
-                  <Font name="Arial" size="15.0" />
-               </font>
-            </TextField>
-            <PasswordField id="passWord" fx:id="passWord" layoutX="147.0" layoutY="308.0" prefHeight="39.0" prefWidth="186.0" promptText="Jelszó">
-               <font>
-                  <Font name="Arial" size="15.0" />
-               </font>
-            </PasswordField>
-            <Button id="signInButton" fx:id="signInButton" layoutX="181.0" layoutY="388.0" mnemonicParsing="false" onAction="#signInButtonClicked" prefHeight="40.0" prefWidth="118.0" text="Bejelentkezés" textFill="WHITE">
-               <font>
-                  <Font name="Arial" size="15.0" />
-               </font>
-            </Button>
-            <Button id="newPassButton" fx:id="newPassButton" alignment="CENTER" layoutX="48.0" layoutY="568.0" mnemonicParsing="false" onAction="#newPasswButtonClicked" prefHeight="27.0" prefWidth="99.0" text="Új jelszó" textFill="WHITE" visible="true">
-               <font>
-                  <Font name="Arial" size="15.0" />
-               </font>
-            </Button>
-            <Button id="regButton" fx:id="regButton" layoutX="333.0" layoutY="568.0" mnemonicParsing="false" onAction="#regButtonClicked" prefHeight="27.0" prefWidth="99.0" text="Regisztáció" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="Arial" size="15.0" />
-               </font>
-            </Button>
-            <Button id="signInGuestButton" fx:id="signInGuestButton" layoutX="155.0" layoutY="450.0" mnemonicParsing="false" onAction="#signInGuestButtonClicked" prefHeight="27.0" prefWidth="171.0" text="Bejelentkezés vendégként" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="Arial" size="13.0" />
-               </font>
-            </Button>
+            <JFXButton id="signInButton" fx:id="signInButton" buttonType="RAISED" layoutX="194.0" layoutY="403.0" onAction="#signInButtonClicked" text="Bejelentkezés" textFill="WHITE" />
+            <JFXButton id="signInGuestButton" fx:id="signInGuestButton" layoutX="160.0" layoutY="453.0" onAction="#signInGuestButtonClicked" text="Bejelentkezés vendégként" textFill="WHITE" />
+            <JFXButton id="newPassButton" fx:id="newPassButton" layoutX="70.0" layoutY="619.0" onAction="#newPassButtonClicked" text="Új jelszó" textFill="WHITE" />
+            <JFXButton id="regButton" fx:id="regButton" layoutX="355.0" layoutY="619.0" onAction="#regButtonClicked" text="Regisztráció" textFill="WHITE" />
+            <JFXTextField id="userName" fx:id="userName" layoutX="160.0" layoutY="239.0" promptText="Felhasználónév" />
+            <JFXPasswordField id="passWord" fx:id="passWord" layoutX="160.0" layoutY="291.0" promptText="Jelszó" />
          </children>
       </Pane>
    </children>
