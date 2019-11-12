@@ -6,19 +6,19 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Fokepernyo">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Fokepernyo">
    <children>
-      <Pane prefHeight="400.0" prefWidth="600.0">
+      <Pane prefHeight="720.0" prefWidth="960.0">
          <children>
-            <Separator layoutX="142.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="5.0" />
-            <Button id="quitButt" fx:id="quitButt" layoutX="33.0" layoutY="359.0" mnemonicParsing="false" onAction="#quitButtClicked" text="Kijelentkezés" />
+            <Separator layoutX="142.0" orientation="VERTICAL" prefHeight="720.0" prefWidth="6.0" />
+            <Button id="quitButt" fx:id="quitButt" layoutX="31.0" layoutY="665.0" mnemonicParsing="false" onAction="#quitButtClicked" text="Kijelentkezés" />
             <Text layoutX="174.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajánló" />
-            <ImageView id="elsoKep" fx:id="elsoKep" fitHeight="150.0" fitWidth="116.0" layoutX="174.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="elsoKep" fx:id="elsoKep" fitHeight="190.0" fitWidth="285.0" layoutX="174.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Pictures/r6s.png" />
                </image>
             </ImageView>
-            <Button id="dataButton" fx:id="dataButton" layoutX="200.0" layoutY="239.0" mnemonicParsing="false" onAction="#dataButtonClicked" text="Adatlap" />
+            <Button id="dataButton" fx:id="dataButton" layoutX="215.0" layoutY="292.0" mnemonicParsing="false" onAction="#dataButtonClicked" text="Adatlap" />
          </children>
       </Pane>
    </children>

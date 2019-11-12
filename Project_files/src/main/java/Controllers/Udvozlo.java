@@ -17,7 +17,7 @@ public class Udvozlo {
         Stage regStage = new Stage();
         regStage.setTitle("Jelszó megváltoztatása");
         regStage.getIcons().add(new Image("/Pictures/Icon.png"));
-        regStage.setScene(new Scene(newUser, 600, 200));
+        regStage.setScene(new Scene(newUser, 600, 300));
         regStage.show();
         Stage stage = (Stage) regButt.getScene().getWindow();
         stage.close();
@@ -29,7 +29,7 @@ public class Udvozlo {
         Stage regStage = new Stage();
         regStage.setTitle("Regisztráció");
         regStage.getIcons().add(new Image("/Pictures/Icon.png"));
-        regStage.setScene(new Scene(newUser, 600, 400));
+        regStage.setScene(new Scene(newUser, 600, 300));
         regStage.show();
         Stage stage = (Stage) regButt.getScene().getWindow();
         stage.close();
@@ -41,7 +41,7 @@ public class Udvozlo {
         Stage mainStage = new Stage();
         mainStage.setTitle("Game_Over");
         mainStage.getIcons().add(new Image("/Pictures/Icon.png"));
-        mainStage.setScene(new Scene(newUser, 600, 400));
+        mainStage.setScene(new Scene(newUser, 960, 720));
         mainStage.show();
         Stage stage = (Stage) signInButt.getScene().getWindow();
         stage.close();

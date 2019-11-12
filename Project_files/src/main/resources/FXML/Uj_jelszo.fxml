@@ -8,19 +8,18 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane stylesheets="@../CSS/Uj_jelszo.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Uj_jelszo">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" stylesheets="@../CSS/Uj_jelszo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Uj_jelszo">
    <children>
-      <Pane id="newPasswPane" fx:id="newPasswPane" prefHeight="200.0" prefWidth="600.0">
+      <Pane id="newPasswPane" fx:id="newPasswPane" prefHeight="300.0" prefWidth="600.0">
          <children>
             <Label layoutX="234.0" layoutY="20.0" text="Új jelszó">
                <font>
                   <Font name="Arial" size="35.0" />
                </font>
             </Label>
-            <TextField id="userName" fx:id="userName" layoutX="207.0" layoutY="100.0" prefHeight="31.0" prefWidth="188.0" promptText="Felhasználónév"></TextField>
-            <TextField id="newPassw" fx:id="newPassw" layoutX="207.0" layoutY="151.0" prefHeight="31.0" prefWidth="188.0" promptText="Új jelszó..."></TextField>
-            <Button onAction="#saveButtonClicked" id="saveButt" fx:id="saveButt" layoutX="464.0" layoutY="155.0" mnemonicParsing="false" text="Mentés" textFill="white">
+            <TextField id="userName" fx:id="userName" layoutX="206.0" layoutY="119.0" prefHeight="31.0" prefWidth="188.0" promptText="Felhasználónév" />
+            <TextField id="newPassw" fx:id="newPassw" layoutX="206.0" layoutY="169.0" prefHeight="31.0" prefWidth="188.0" promptText="Új jelszó" />
+            <Button id="saveButt" fx:id="saveButt" layoutX="250.0" layoutY="235.0" mnemonicParsing="false" onAction="#saveButtonClicked" prefHeight="31.0" prefWidth="101.0" text="Mentés" textFill="white">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>

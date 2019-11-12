@@ -7,47 +7,50 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/Regisztracio.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Regisztracio">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" stylesheets="@../CSS/Regisztracio.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Regisztracio">
    <children>
-      <Pane id="registPane" fx:id="registPane" prefHeight="400.0" prefWidth="600.0">
+      <Pane id="registPane" fx:id="registPane" prefHeight="300.0" prefWidth="600.0">
          <children>
-            <Text layoutX="230.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Regisztráció" textAlignment="CENTER">
+            <Text layoutX="249.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Regisztráció" textAlignment="CENTER">
                <font>
-                  <Font name="Arial" size="35.0" />
+                  <Font name="Arial" size="25.0" />
                </font>
             </Text>
-            <ImageView fx:id="miniPic" fitHeight="32.0" fitWidth="32.0" layoutX="180.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="miniPic" fitHeight="32.0" fitWidth="32.0" layoutX="191.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Pictures/Icon.png" />
                </image>
             </ImageView>
-            <Text layoutX="45.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználónév" textAlignment="CENTER">
+            <Text layoutX="97.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználónév:" textAlignment="RIGHT">
                <font>
-                  <Font name="Arial" size="18.0" />
+                  <Font name="Arial" size="15.0" />
                </font>
             </Text>
 
-            <TextField id="registName" fx:id="registName" layoutX="45.0" layoutY="134.0" prefHeight="30.0" prefWidth="165.0" />
-
-            <Text layoutX="45.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó" textAlignment="CENTER">
+            <TextField id="registName" fx:id="registName" layoutX="222.0" layoutY="114.0" prefHeight="30.0" prefWidth="156.0">
                <font>
-                  <Font name="Arial" size="18.0" />
+                  <Font size="15.0" />
+               </font></TextField>
+
+            <Text layoutX="104.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó:" textAlignment="RIGHT" wrappingWidth="102.6845703125">
+               <font>
+                  <Font name="Arial" size="15.0" />
                </font>
             </Text>
 
-            <PasswordField id="registPasw" fx:id="registPasw" layoutX="45.0" layoutY="220.0" prefHeight="30.0" prefWidth="165.0" />
+            <PasswordField id="registPasw" fx:id="registPasw" layoutX="222.0" layoutY="160.0" prefHeight="30.0" prefWidth="156.0" />
 
-            <Button id="registButt" fx:id="registButt" layoutX="108.0" layoutY="320.0" mnemonicParsing="false" onAction="#registCheck" prefHeight="40.0" prefWidth="385.0" text="Regisztrálok!" textFill="WHITE">
+            <Button id="registButt" fx:id="registButt" layoutX="207.0" layoutY="240.0" mnemonicParsing="false" onAction="#registCheck" prefHeight="40.0" prefWidth="186.0" text="Regisztrálok!" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
             </Button>
-            <Label fx:id="warningName" visible="false" layoutX="230.0" layoutY="139.0" text="Kérlek ne hagyd üresen!" textFill="CRIMSON">
+            <Label fx:id="warningName" layoutX="400.0" layoutY="120.0" text="Kérlek ne hagyd üresen!" textFill="CRIMSON" visible="false">
                <font>
                   <Font name="Arial Bold" size="16.0" />
                </font>
             </Label>
-            <Label fx:id="warningPassw" visible="false" layoutX="230.0" layoutY="225.0" text="Kérlek ne hagyd üresen!" textFill="CRIMSON">
+            <Label fx:id="warningPassw" layoutX="393.0" layoutY="165.0" prefHeight="20.0" prefWidth="186.0" text="Kérlek ne hagyd üresen!" textFill="CRIMSON" visible="false">
                <font>
                   <Font name="Arial Bold" size="16.0" />
                </font>

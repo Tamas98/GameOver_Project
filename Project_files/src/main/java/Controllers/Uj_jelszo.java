@@ -17,7 +17,7 @@ public class Uj_jelszo {
         Stage regStage = new Stage();
         regStage.setTitle("Regisztráció");
         regStage.getIcons().add(new Image("/Pictures/Icon.png"));
-        regStage.setScene(new Scene(newUser, 600, 400));
+        regStage.setScene(new Scene(newUser, 480, 720));
         regStage.show();
         Stage stage = (Stage) saveButt.getScene().getWindow();
         stage.close();

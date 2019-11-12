@@ -44,7 +44,7 @@ public class Regisztracio {
         Stage regStage = new Stage();
         regStage.setTitle("Game_Over");
         regStage.getIcons().add(new Image("/Pictures/Icon.png"));
-        regStage.setScene(new Scene(newUser, 600, 400));
+        regStage.setScene(new Scene(newUser, 480, 720));
         regStage.show();
         Stage stage = (Stage) registButt.getScene().getWindow();
         stage.close();

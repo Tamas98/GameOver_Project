@@ -18,7 +18,7 @@ public class Fokepernyo {
         Stage mainStage = new Stage();
         mainStage.setTitle("Bejelentkezés");
         mainStage.getIcons().add(new Image("/Pictures/Icon.png"));
-        mainStage.setScene(new Scene(newUser, 600, 400));
+        mainStage.setScene(new Scene(newUser, 480, 720));
         mainStage.show();
         Stage stage = (Stage) quitButt.getScene().getWindow();
         stage.close();
@@ -30,7 +30,7 @@ public class Fokepernyo {
         Stage dataStage = new Stage();
         dataStage.setTitle("Adatlap");
         dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
-        dataStage.setScene(new Scene(newUser, 600, 400));
+        dataStage.setScene(new Scene(newUser, 810, 600));
         dataStage.show();
         Stage stage = (Stage) dataButton.getScene().getWindow();
         stage.close();
