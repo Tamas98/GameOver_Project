@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Adatlap">
    <children>
-      <Pane prefHeight="400.0" prefWidth="600.0" />
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Button id="backButton" fx:id="backButton" layoutX="31.0" layoutY="348.0" mnemonicParsing="false" onAction="#backButtonClicked" text="Vissza" />
+         </children></Pane>
    </children>
 </AnchorPane>

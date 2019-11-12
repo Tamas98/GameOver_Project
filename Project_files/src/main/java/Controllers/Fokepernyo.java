@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 public class Fokepernyo {
 
     @FXML
-    Button quitButt;
+    Button quitButt, dataButton;
 
     public void quitButtClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Udvozlo.fxml"));
@@ -24,4 +24,17 @@ public class Fokepernyo {
         stage.close();
 
     }
+
+    public void dataButtonClicked() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Adatlap.fxml"));
+        Stage dataStage = new Stage();
+        dataStage.setTitle("Adatlap");
+        dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        dataStage.setScene(new Scene(newUser, 600, 400));
+        dataStage.show();
+        Stage stage = (Stage) dataButton.getScene().getWindow();
+        stage.close();
+
+    }
+
 }
