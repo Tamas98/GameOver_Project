@@ -1,56 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Fokepernyo">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="960.0" stylesheets="@../CSS/Fokepernyo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Fokepernyo">
    <children>
-      <Pane prefHeight="720.0" prefWidth="960.0">
+      <VBox alignment="TOP_RIGHT" prefHeight="720.0" prefWidth="250.0">
          <children>
-            <Separator layoutX="142.0" orientation="VERTICAL" prefHeight="720.0" prefWidth="6.0" />
-            <Button id="signOutButton" fx:id="signOutButton" layoutX="31.0" layoutY="665.0" mnemonicParsing="false" onAction="#signOutButtonClicked" text="Kijelentkezés" />
-            <Text layoutX="174.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajánló" />
-            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="174.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+            <Pane prefHeight="720.0" prefWidth="250.0" style="-fx-background-color: #6747CD;">
+               <children>
+                  <JFXButton id="signOutButton" fx:id="signOutButton" alignment="CENTER_RIGHT" layoutX="12.0" layoutY="648.0" onAction="#signOutButtonClicked" prefHeight="58.0" prefWidth="226.0" text="Kijelentkezés" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Pictures/sign-out.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Pane prefHeight="720.0" prefWidth="710.0">
+         <children>
+            <Label layoutX="36.0" layoutY="48.0" text="Ajánló" textFill="#545454">
+               <font>
+                  <Font name="Impact" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="410.0" text="Böngészés" textFill="#545454">
+               <font>
+                  <Font name="Impact" size="35.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="36.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Pictures/r6s.png" />
                </image>
             </ImageView>
-            <Button id="dataButton" fx:id="dataButton" layoutX="215.0" layoutY="292.0" mnemonicParsing="false" onAction="#dataButtonClicked" text="Adatlap" />
-            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="337.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="199.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Pictures/pubg.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="500.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="367.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Pictures/cod.png" />
                </image>
             </ImageView>
-            <Text layoutX="174.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Böngészés" />
-            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="174.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="36.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Pictures/al.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="337.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Pictures/cod.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="500.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="199.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Pictures/csgo.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="665.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="367.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/ds.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="533.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Pictures/fifa.png" />
                </image>
             </ImageView>
-         </children>
-      </Pane>
+            <JFXButton id="dataButton" fx:id="dataButton" layoutX="69.0" layoutY="326.0" onAction="#dataButtonClicked" prefHeight="34.0" prefWidth="76.0" text="Adatlap">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </JFXButton>
+         </children></Pane>
    </children>
-</AnchorPane>
+</HBox>
