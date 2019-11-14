@@ -1,8 +1,9 @@
 .root{
     -fx-background-color: #FFFFFF;
 }
+
 .text-field{
-    -fx-text-fill: white;
+    -fx-text-fill: black;
     -fx-font-family: Arial;
     -fx-font-size: 15px;
     -fx-font-weight: bold;

@@ -42,7 +42,7 @@ public class Udvozlo {
     public void signInButtonClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Fokepernyo.fxml"));
         Stage mainStage = new Stage();
-        mainStage.setTitle("Game_Over");
+        mainStage.setTitle("Főképernyő");
         mainStage.getIcons().add(new Image("/Pictures/Icon.png"));
         mainStage.setScene(new Scene(newUser, 960, 720));
         mainStage.setResizable(false);
@@ -54,7 +54,7 @@ public class Udvozlo {
     public void signInGuestButtonClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Fokepernyo.fxml"));
         Stage mainStage = new Stage();
-        mainStage.setTitle("Game_Over");
+        mainStage.setTitle("Főképernyő");
         mainStage.getIcons().add(new Image("/Pictures/Icon.png"));
         mainStage.setScene(new Scene(newUser, 960, 720));
         mainStage.setResizable(false);

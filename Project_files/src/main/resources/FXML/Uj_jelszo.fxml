@@ -24,11 +24,21 @@
                   <Font name="Impact" size="14.0" />
                </font>
             </JFXTextField>
-            <JFXTextField id="newPassw" fx:id="newPassw" focusColor="#6747cd" labelFloat="true" layoutX="207.0" layoutY="172.0" promptText="Új jelszó" unFocusColor="#6747cd">
+            <JFXTextField id="newPassw" fx:id="newPassw" focusColor="#6747cd" labelFloat="true" layoutX="207.0" layoutY="172.0" promptText="Jelszó" unFocusColor="#6747cd">
                <font>
                   <Font name="Impact" size="14.0" />
                </font>
             </JFXTextField>
+            <Label layoutX="31.0" layoutY="125.0" text="Add meg a felhasználóneved:" textFill="#545454">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="31.0" layoutY="180.0" prefHeight="17.0" prefWidth="162.0" text="Adj meg egy új jelszót:" textFill="#545454">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </children>
