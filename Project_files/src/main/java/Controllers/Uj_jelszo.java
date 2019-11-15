@@ -1,10 +1,12 @@
 package Controllers;
 
+import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
@@ -12,6 +14,29 @@ public class Uj_jelszo {
 
     @FXML
     Button saveButton;
+
+    @FXML
+    Label warningName, warningPassw;
+
+    @FXML
+    JFXTextField userName, newPassw;
+
+    public void emptyCheck() throws Exception{
+        warningName.setVisible(false);
+        warningPassw.setVisible(false);
+        if(userName.getText().equals("") && newPassw.getText().equals("")){
+            warningName.setVisible(true);
+            warningPassw.setVisible(true);
+
+        } else if(userName.getText().equals("")) {
+            warningName.setVisible(true);
+        } else if(newPassw.getText().equals("")) {
+            warningPassw.setVisible(true);
+        } else {
+            saveButtonClicked();
+        }
+    }
+
 
     public void saveButtonClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Udvozlo.fxml"));

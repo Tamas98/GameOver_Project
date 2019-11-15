@@ -18,7 +18,7 @@
                   <Font name="Impact" size="35.0" />
                </font>
             </Label>
-            <JFXButton id="saveButton" fx:id="saveButton" layoutX="206.0" layoutY="242.0" onAction="#saveButtonClicked" prefHeight="33.0" prefWidth="188.0" text="Mentés" />
+            <JFXButton id="saveButton" fx:id="saveButton" layoutX="206.0" layoutY="242.0" onAction="#emptyCheck" prefHeight="33.0" prefWidth="188.0" text="Mentés" />
             <JFXTextField id="userName" fx:id="userName" focusColor="#6747cd" labelFloat="true" layoutX="207.0" layoutY="117.0" promptText="Felhasználónév" unFocusColor="#6747cd">
                <font>
                   <Font name="Impact" size="14.0" />
@@ -37,6 +37,16 @@
             <Label alignment="CENTER_RIGHT" layoutX="31.0" layoutY="180.0" prefHeight="17.0" prefWidth="162.0" text="Adj meg egy új jelszót:" textFill="#545454">
                <font>
                   <Font name="Impact" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="warningPassw" layoutX="400.0" layoutY="182.0" text="Kérlek ne hagyd üresen!" textFill="CRIMSON" visible="false">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="warningName" layoutX="400.0" layoutY="121.0" text="Kérlek ne hagyd üresen!" textFill="CRIMSON" visible="false">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
                </font>
             </Label>
          </children>
