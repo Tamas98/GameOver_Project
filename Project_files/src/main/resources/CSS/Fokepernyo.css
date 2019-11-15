@@ -36,8 +36,3 @@
     -fx-border-width: 0px 0px 0px 5px;
     -fx-border-style: solid;
 }
-
-#rainbowPic:hover{
-    -fx-pref-height: 120px;
-    -fx-pref-width:120px;
-}
