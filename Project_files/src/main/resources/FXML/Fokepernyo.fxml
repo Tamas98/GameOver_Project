@@ -74,7 +74,7 @@
                               <Font name="Impact" size="35.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="32.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView onMouseClicked="#rainbowGame" id="rainbowPic" fx:id="rainbowPic" fitHeight="190.0" fitWidth="285.0" layoutX="32.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/r6s.png" />
                            </image>
@@ -109,11 +109,6 @@
                               <Image url="@../Pictures/fifa.png" />
                            </image>
                         </ImageView>
-                        <JFXButton id="dataButton" fx:id="dataButton" layoutX="65.0" layoutY="289.0" onAction="#dataButtonClicked" prefHeight="34.0" prefWidth="76.0" text="Adatlap">
-                           <font>
-                              <Font name="Arial" size="15.0" />
-                           </font>
-                        </JFXButton>
                         <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="32.0" layoutY="636.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/gta5.png" />

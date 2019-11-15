@@ -6,12 +6,16 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 public class Fokepernyo {
 
     @FXML
-    Button signOutButton, dataButton, mainButton, libButton;
+    Button signOutButton, mainButton, libButton;
+
+    @FXML
+    ImageView rainbowPic;
 
     public void signOutButtonClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Udvozlo.fxml"));
@@ -26,7 +30,7 @@ public class Fokepernyo {
 
     }
 
-    public void dataButtonClicked() throws Exception {
+    public void rainbowGame() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Adatlap.fxml"));
         Stage dataStage = new Stage();
         dataStage.setTitle("Adatlap");
@@ -34,7 +38,7 @@ public class Fokepernyo {
         dataStage.setScene(new Scene(newUser, 810, 600));
         dataStage.setResizable(false);
         dataStage.show();
-        Stage stage = (Stage) dataButton.getScene().getWindow();
+        Stage stage = (Stage) rainbowPic.getScene().getWindow();
         stage.close();
 
     }
