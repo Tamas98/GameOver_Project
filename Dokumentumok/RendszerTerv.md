@@ -1,4 +1,18 @@
-# GameOver: Rendszerkövetelmények
+# GameOver: Rendszerterv
+
+### Tartalomjegyzék
+
+- [A rendszer célja]()
+- [Projekt terv]()
+- [Üzleti folyamatok modellje]()
+- [Követelmények]()
+- [Funkcionális terv]()
+- [Fizikai környezet]()
+- [Architekturális terv]()
+- [Tesztterv]()
+- [Telepítési terv]()
+- [Karbantartási terv]()
+- [Követelmények]()
 
 ## I. A rendszer célja
 
@@ -17,14 +31,14 @@ is biztosítunk számukra.
 
 ## II. Projekt terv
 
-### Projektszerepkörök, felelősségek
+### 1. Projektszerepkörök, felelősségek
 
 | Szerepkör     | Felelősség   |
 | :-----------: | :----------: |
 | Felhasználók  | Szakszerűen használják a programot. |
 | Fejlesztők    | Legjobb tudásuk szerint megalkotják a programot amit elvállaltak. |
 
-### Projektmunkások és felelősségeik
+### 2. Projektmunkások és felelősségeik
 
 | Projektmunkások | Felelősség   |
 | :-------------: | :----------: |
@@ -33,7 +47,7 @@ is biztosítunk számukra.
 | Erdei Kristóf   | Front end       |
 | Tóth Csaba      | Front end       |
 
-### Ütemterv
+### 3. Ütemterv
 
 | Dátum      | Haladás                                           |
 | :--------: | :-----------------------------------------------: |
@@ -55,7 +69,9 @@ fejlesztjük ki a jelenlegi projektünk alatt a "Game_Over" programot, aminek a 
 felhasználó könnyedén képes rengetek játékok között barangolni, gyártótól teljesen függetlenül,
 tehát megadjuk a felhasználóknak azt a fajta szabadságát, hogy képes legyen ténylegesen az 
 ízlésének megfelelő játékokkal találkoznia, ezáltal nem fogja azt érezni, hogy egy adott gyártó
-eröltetve el akarna neki adni valamit, amit nem is szeretne soha kipróbálni. Felhasználóinknak 
+eröltetve el akarna neki adni valamit, amit nem is szeretne soha kipróbálni. 
+
+Felhasználóinknak 
 továbbá biztosítunk egy regisztráció/belépés lehetőséget, _ami persze nem kötelező, ha valaki csak
 kipróbálni szeretné az alkalmazásunkat akkor nem kötelezzük rá, hogy csak néhány alkalom miatt
 regisztráljon, ekkor vendégként is beléphet_, ezzel tovább növelve azt az érzetet a játékosokban, hogy teljesen
@@ -73,7 +89,6 @@ az emberek, bárhol, bármikor amikor csak szükségük lenne rá, tudják haszn
 olyan felhasználóbarát, gyors, rugalmas, modern kinézetű szoftvert fejleszteni ami eleget tesz
 ezeknek a feltételeknek és bárki csak ajánlani tudná ismerőseinek.
 
-
 ## IV. Követelmények
 
 Mivel a célunk egy sok retegű közönség kiszolgálására alkalmas alkalmazás megírása, ezért biztosítanunk
@@ -88,6 +103,7 @@ találkozni. Illetve ha már regisztrációt kínálunk a felhasználóinknak, a
 kell, hogy képes legyen jelszavának a módosítására is, ha esetleg elfelejtette volna a már 
 korábban megadott jelszavát. Minden felhasználó, _még aki vendégként jelentkezett is be_, 
 legyen lehetősége játékokat megkeresni, a lehető legtöbb szürési lehetőségekkel: kiadó, kiadási dátum, ár, téma.
+
 Csak a regisztrált felhasználóknak van lehetősége **egyéni könyvtárak nyílvántartására**, ahol minden eddigi
 elmentett játékok szerepelnek, ezáltal bármikor visszakereshet egy már korábban bekedvelt játékot, ha
 esetleg elfelejtette volna egy adott játék nevét például. Legyen képes a felhasználó bizonyos szintű
@@ -124,10 +140,18 @@ számára jelezni, hogy valamilyen hiba történt. Terveink szerint a fejlesztő
 csapat a hiba mindkét fajtája esetén jelentést kap, amit utána igyekszenek
 minél előbb kijavítani.
 
+#### Bejelentekező felület:
+![Kinezet terv](img/login.png)
+
+#### Főoldal:
+![Kinezet](img/mainpage.png)
+
+#### Játék adatlapja:
+![terv](img/datapage.png)
 
 ## VI. Fizikai környezet
 
-### Adatok tárolása - Hibernate
+### 1. Adatok tárolása - Hibernate
 
 Szükségünk van legalább 2 táblára, melyek közül egyikben a felhasználók
 adatait, míg a másik a játékok adatait tárolja. Hogy elérjük adatbázisunkat
@@ -135,21 +159,21 @@ egy objektum-relációs leképezést megvalósító programkönyvtárat, Hiberna
 fogunk használni, melynek segítségével az osztályainkat és a relációs
 adatbázisunk tábláit képezzük egymásba.
 
-### Operációs rendszer - Linux, Windows,
+### 2. Operációs rendszer - Linux, Windows,
 
 A programot szeretnénk ha egyaránt lehetne futtatni Linuxon és Windowson is, így reméljük
 nagyobb népszerűségre tesz szert a hordozhatósága miatt. Linuxra elég egyszerűen eltudjuk
 készíteni, mivel ebben már van a csapatnak tapasztalata. A kihívás a Windows-os problémamentes
 futtatás, mivel ezt még eddig nem próbáltuk.
 
-### Programozási nyelv - Java
+### 3. Programozási nyelv - Java
 
 Programozási nyelv egyszerűen a Java lesz, mivel ezaz a nyelv amiben mindenkinek van
 elég tapasztalata egy szoftver elkészítéséhez. Pontosan a Java SE Development Kit 11-et fogjuk
 alkalmazni. Tehát minden gép amelyen ezt a szoftvert szeretnénk használni elengedhetetlen ez
 a csomag.
 
-### Felhasználói felület - JavaFX
+### 4. Felhasználói felület - JavaFX
 
 Ahhoz, hogy szép és elfogadható kinezetű programot kapjunk a JavaFX grafikus technológiát
 használjuk. Valamint fxml fájlokat használva szerkesztjük a kinézetet, amiknek könnyű,
@@ -158,7 +182,7 @@ használni, mely számos előnnyel rendelkezik.
 
 ## VII. Architekturális terv
 
-### Architekturális tervezési minta
+### 1. Architekturális tervezési minta
 
 Korábbi projektjeinkhez hasonlóan itt is az ismert és gyakran alkalmazott MVC, magyar fordításban
 MNV, azaz Modell-Nézet-Vezérlő elveit fogjuk követni. Ez annyit jelent, hogy főleg a projekten 
@@ -176,7 +200,7 @@ felhasználónként eltároljuk azokat a játékokat személyes könyvtárként,
 érdeklődik iránta. Ezzel a tervezési mintával tervezzük megvalósítani a projektünket, amivel 
 reményeink szerint, a kódunkat is nagyban átláthatóbbá fogja tenni.
 
-### Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai
+### 2. Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai
 
 A korábban említett, az ismert Modell-Nézet-Vezérlő vezérlő elveit követve alakítjuk ki programunk 
 rétegeit. Amint a felhasználó elindítja a programot, választhat, hogy milyen módon kíván belépni 
@@ -195,7 +219,7 @@ lesznek megtalálhatóak a felhasználó által korábban bekedvelt játékok. V
 fontos részét képezi az alkalmazásunknak a tesztelés. Fontos, hogy minél több tesztet írjunk 
 a programunkhoz ezáltal biztosítva annak sikerét.
 
-### Változások kezelése
+### 3. Változások kezelése
 
 Rendszerünk fő céljai között szerepel az, hogy bármikor, bárki által hozzáférhető legyen a programunk. 
 Fontos számunkra, hogy tiszta, átlátható kódot írjunk, illetve többek között a rétegelt architektura 
@@ -203,7 +227,7 @@ is segít ebben. Azért fontos, hogy átlátható kódot irjunk, mert esetleges 
 ha valami kód részlet megváltoztatása nagyon szükségszerű, akkor az könnyedén, kevés időbefektetéssel 
 történjen.
 
-### Rendszer bővíthetősége
+### 4. Rendszer bővíthetősége
 
 Mivel napjainkban napról napra rengetek játékmegjelenésről beszélhetünk, ezért fontos tényező az, 
 hogy ezzel együtt folyamatosan tudjuk bővíteni a programunkat. Többek között könnyedén bővíthető 
@@ -213,6 +237,8 @@ hogy a szoftverünk a lehető legtöbb kezek között megfog fordulni,ezért igy
 úgy megtervezni, hogy bővíthetősége egyszerű és könnyen kivitelezhető legyen.
 
 ## VIII. Tesztterv
+
+### 1. Első körös
 
 A **tesztterv** megintcsak egy olyan fejezetet takar, ami valószínűleg kevésbé tűnik fontos
 feladatnak, emiatt sok projekt során elfelejtődik. Vagy lustaság, vagy időhiány miatt. Ami nagy
@@ -228,6 +254,9 @@ fejlesztés elkezdésének legelső szakaszaiban is. Mindezen felül egy több l
 tesztelési tervet fogunk megvalósítani. **Egyrészt** *JUnit* egységteszt keretrendszert 
 fogunk használni. Ez annyit tesz, hogy a kód írásával párhuzamosan fejlesztjük a kódot tesztelő
 osztályokat is. Ezek az egység tesztek, ami akkor hibátlan, ha az összes teszt hibátlanul lefut.
+
+### 2. Második körös
+
 **Másrészt** külön tesztelési jegyzőkönyvet fogunk vezetni manuálisan, amiben alaposan
 átvizsgálunk minden egyes funkciót. Ebben is részt fog venni a csapatunk összes tagja annak
 érdekében, hogy minden lehetséges esetet végig tudjunk nézni és ténylegesen minden esetleges
@@ -241,12 +270,31 @@ felületek amikkel interakcióba lépnek a felhasználók mind mind működnek, 
 ahogy azt mi elvárjuk. A bejelentkezés folyamatának működőképesnek és gördülékenynek kell
 lennie. Pont úgy, mint minden más részegységnek is. A program legyen megfelelőképp gyors,
 hogy a felhasználónak öröm legyen használnia. Csapatunk a tesztelési eredményeket részletesen
-fogja dokumentálni. Az eredmények függvényében két lépés közül tudunk majd választani. Hiba
+fogja dokumentálni.
+
+### 3. Harmadik körös
+
+Az eredmények függvényében két lépés közül tudunk majd választani. Hiba
 vagy hibák esetén, azok javítása után újra végigcsináljuk a teszteket és visszaadjuk a
 projektet a tesztelő csoportnak. Ha viszont nem található hiba a rendszerben, akkor pedig a
 projekt átadásra kerülhet a megrendelő felé. A projekt átadása után tervezünk majd *béta
 verzió*kat kiadni, amelyeket a vállalkozó szellemű felhasználók használhatnak, ezáltal a hibák
 ki tudnak derülni addig, amíg az a *release* lesz az éles.
+
+| Tesztesetek |
+| :-----------:
+| Program elindítása
+| Regisztráció
+| Új jelszó
+| Kilépés
+| Bejelentkezés
+| Bejelentkezés vendégént
+| Főoldal megjelenítése
+| Főoldal menüpont
+| Könyvtár menüpont
+| Kijelentkezés
+| Játék adatlap megjelenítése
+|
 
 ## IX. Telepítési terv
 
@@ -290,3 +338,18 @@ hogy a program felhasználói felület ne avuljon el, mindig megfeleljen az adot
 Erre fel vagyunk készülve, nagy hangsúlyt fogunk fektetni a projektünk precíz karbantartására.
 A felhasználói elégedettség az egyik legfontosabb dolog számunkra, emiatt nem is engedhetjük
 meg magunknak, hogy ne foglalkozzunk szoftverünkkel a lehető leghoszabb ideig.
+
+## X. Követelmények
+
+| Megnevezés |
+| :-----------:
+| Regisztráció
+| Bejelentkezés
+| Kijelentkezés
+| Új jelszó
+| Bejelentkezés vendégént
+| Főoldal
+| Könyvtár
+| Adatlap
+| Adatbázis
+|
