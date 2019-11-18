@@ -12,7 +12,6 @@
 - [Tesztterv]()
 - [Telepítési terv]()
 - [Karbantartási terv]()
-- [Követelmények]()
 
 ## I. A rendszer célja
 
@@ -115,6 +114,19 @@ akkor fontos, hogy akadás mentesen fusson, illetve a lehető legkisebb tárhely
 a felhasználó számítogépén. További bővítési célunk, hogy az internetről is elérhető legyen a 
 programunk, ezért később fontos lesz, hogy a lehető legkisebb adatforgalomat használja és hogy 
 egyszerre a lehető legtöbb ember tudja használni gördülékenyen, akadás és mindenféle hiba mentesen.
+
+| Megnevezés |
+| :-----------:
+| Regisztráció
+| Bejelentkezés
+| Kijelentkezés
+| Új jelszó
+| Bejelentkezés vendégént
+| Főoldal
+| Könyvtár
+| Adatlap
+| Adatbázis
+||
 
 ## V. Funkcionális terv
 
@@ -294,7 +306,7 @@ ki tudnak derülni addig, amíg az a *release* lesz az éles.
 | Könyvtár menüpont
 | Kijelentkezés
 | Játék adatlap megjelenítése
-|
+||
 
 ## IX. Telepítési terv
 
@@ -338,18 +350,3 @@ hogy a program felhasználói felület ne avuljon el, mindig megfeleljen az adot
 Erre fel vagyunk készülve, nagy hangsúlyt fogunk fektetni a projektünk precíz karbantartására.
 A felhasználói elégedettség az egyik legfontosabb dolog számunkra, emiatt nem is engedhetjük
 meg magunknak, hogy ne foglalkozzunk szoftverünkkel a lehető leghoszabb ideig.
-
-## X. Követelmények
-
-| Megnevezés |
-| :-----------:
-| Regisztráció
-| Bejelentkezés
-| Kijelentkezés
-| Új jelszó
-| Bejelentkezés vendégént
-| Főoldal
-| Könyvtár
-| Adatlap
-| Adatbázis
-|

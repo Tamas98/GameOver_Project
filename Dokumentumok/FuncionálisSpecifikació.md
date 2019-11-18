@@ -1,6 +1,16 @@
-# GameOver: Funkcionális Specifikáció
+# GameOver: Funkcionálisspecifikáció
 
-### I.Hogyan állunk jelenleg?
+### Tartalomjegyzék
+
+- [Hogyan állunk jelenleg?]()
+- [A felhasználók álma]()
+- [Befolyásoló tényezők]()
+- [Látványterv]()
+- [A program futása]()
+- [Megvalósítható?]()
+- [Architekturális terv]()
+
+## I. Hogyan állunk jelenleg?
 
 Jelenleg a felhasználók rendelkezésére áll rengeteg lehetőség, amennyiben
 számítógépes játékot keresnek szabadidejük eltöltésére. A [Microsoft Store](https://www.microsoft.com/en-us/store/b/home)-ban
@@ -17,11 +27,11 @@ van szükség egy olyan alkalmazásra, amellyel a felhasználó személyes
 érdeklődési körének megfelelően kereshet játékokat, valamint a szoftver is
 ajánl neki ilyeneket.
 
-### II. A felhasználók álma
+## II. A felhasználók álma
 
 Ami az elsődleges és a legfontosabb az az, hogy **mindenki számára elérhető** legyen. Emiatt és egyébként is nagyon nehéz megfelelni a *felhasználók elvárásai*nak. Főleg, ha ilyen széles réteg felé nyitunk. Elengedhetetlen, hogy a felhasználóink saját profilt készíthessenek maguknak. Emiatt szükségünk van a **regisztrációra**. Amihez csak a szükségek adatokat kérjük be, megkímélve a felhasználókat sok felesleges információ megadásától. Persze opcionálisan lesz erre lehetőség és a későbbiekben minden módosítható. A jelszó természetesen még bejelentkezés előtt módosítható lesz, ha netalántán valaki elfelejtené. A **bejelentkező felület** megalkotásánál is törekedni kell az *egyszerűség*re és a *gyorsaság*ra. Ahogy nyilvánvalóan az egész program futása során fontos szempontot jelent számunkra. Mivel célul tűztük ki azt, hogy széles körben használatos szoftvert készítsünk, ezért meg kell engednünk a **vendég felhasználó**ként való belépést is. Ha valaki bármilyen okból kifolyólag nem szeretne regisztrálni. Ez persze számos hátránnyal, illetve *korlátozás*sal jár (nem tud a felhasználó kommentelni, értékelni..). Illetve mivel így nem tudjuk tárolni az adatait, minden egyes látogatásnál új felhasználóként van értelmezve, emiatt az ajánlások sem működhetnek. Az **ajánlások** nagyon fontos részét képzik a leendő programunknak. Ami azt jelenti, hogy előkelő helyet fog kapni a főképernyőn a bejelentkezés után. *Naponta 3 különböző ajánlat*ot fogunk közzétenni a felhasználóknak. Ezek a lehetőségek szerint minél jobban próbálják majd *kitalálni mindegy egyes felhasználó vágyait*. Azonban ha ez mégsem sikerül valamilyen ok miatt, akkor lehet őket mellőzni is. Ha viszont tetszik, akkor minden további nélkül megtekinthetőek lesznek a további részletek az adott játékról. Ezen kívül a **főoldal** fontos eleme kell, hogy legyen a **böngészés**, illetve a **keresés** funkciója is. A keresési kulcsszavak lehető *legszélesebb skáláját* fogjuk nyújtani a felhasználóknak. Lehet majd keresni *címre, kiadóra, témára*, de akár *megjelenési dátumra* is (plusz amire igény merül fel a későbbiekben). Mindemelett ami talán a leginkább fontos a programunkban, az a **játékok adatlapja**. Hiszen ez alkotja úgymond a *gerincet*. Itt fel lesz tüntetve a *cím, a borító, a megjelenés dátuma, a kiadó, a platformok, egy rövid kedvcsináló leírás, linkelve az előzetes, az ár*. A felhasználók **értékelhetik** az adott játékot egy egytől ötig terjedő skálán, csillagozós rendszerben. Lehetőségük lesz **kommentelni**, megosztani a saját véleményüket. Illetve a ma népszerű social oldalakra való *megosztás*ra és természetesen *elmenthetik* őket kivánságlistára vagy későbbi megtekintésre. Ami szintén vágyálom cél, az az, hogy a felhasználók új játékokat is be tudjak vinni a rendszerbe, ha az valamiért nem szerepelne még az adatbázisban. Ez persze moderálás után kerülne be, ha azt válósnak vagy megfelelőnek találtuk. Lényeges számunkra, hogy a felhasználók a legnagyobb *biztonság*ban tudják majd a saját adataikat. Ezért a jelszavakat titkosítva szeretnénk tárolni, illetve semmilyen egyéb adat sem lesz felhasználva semmilyen egyéb célra sem. Megfelelve ezzel minden mai elvárásnak. Ami a **felhasználói felület**et illeti, szintén törekedni szeretnénk a jelen elvárások kielégítésére. Épp ezért kell *intuitívnak* és *minimalistának* lennie. A felhasználó minél könyedebben tudjon navigálni. Egyszerű, *kényelmes* és *gördülékeny *futást szeretnénk megvalósítani. *Minél szebb* és *letisztultabb* környezetet adva, hogy öröm legyen a használata és ne szenvedés. Természetesen a program elkészülését követően semmiképp sem szeretnénk a saját sorsára hagyni. Folyamatos fejlesztéseket és javításokat fogunk alkalmazni a továbbiakban is. És új funkciók bevezetését szintén tervezzük. Amiben nagyon fontosak a felhasználók *visszajelzés*ei, ezért ezekre különösen figyelni fogunk, illetve lehetőséget biztosítani a feedbackre. Szintén szerepel a jövőbeli terveink között, hogy később az alkalmazás felkerüljön az internetre és egy bárki számára bármikor elérhető online szolgáltatás legyen belőle.
 
-### III. Befolyásoló tényezők
+## III. Befolyásoló tényezők
 
 A mai világban ha szeretnénk tartalmas, szórakoztató és mégis jellemépítő játékkal játszani,
 elég nehéz dolgod lesz találni egyet. A probléma ott kezdődik, hogy minden játékfejlesztő cégnek
@@ -42,7 +52,7 @@ hogy a szülők, akik nem szeretnék, hogy gyerekük agyzsibbasztó, értelmetle
 játszanak, itt kitudják választani a megfelelő személyiség építő játékokat gyermekeik számára
 az értékelések alapján.
 
-### IV. Látványterv
+## IV. Látványterv
 
 A programablak neve: Game Over. A program **sikeres** indítása után a bejelentkező 
 képernyő fog megjelenni. A bejelentkező képernyőnek a felső részének a középénél
@@ -92,9 +102,7 @@ Ezen a felületen lesznek majd láthatóak azok a játékok amiket a felhasznál
 a főoldalra. Ha a főoldalon jobb alul látható "**Kilépés**" feliratú gombra rákattintunk, akkor az alkalmazás
 bezáródását vonja maga után. Mindig amikor egy gombot használ a felhasználó, akkor megváltozik a gomb háttere, majd vissza az eredetire..
 
-
-
-### V. A program futása
+## V. A program futása
 
 A program indulásakor lehetőséget kívánunk biztosítani a felhasználónak
 vendégként történő belépésre vagy bejelentkezésre. Bejelentkezés esetén
@@ -118,7 +126,7 @@ jelennének meg róla, mint például: kiadás dátuma, rövid leírása, érté
 teljes cím, egy poszter, valamint egy gomb amely elviszi a felhasználót a
 játék előzeteséhez, vagy maga az előzetes fog megjelenni az alkalmazásban.
 
-### VI. Megvalósítható?
+## VI. Megvalósítható?
 
 A projekt megvalósításához az alapvető szoftverfejlesztői eszközökre van szükség. A feladatok
 követésére egy online feladatkövető rendszert használunk, a Trellot. Ez az oldal tökéletesen
@@ -129,3 +137,28 @@ Mavent használjuk. Adatbázisokra is szükség van a felhasználók nevének é
 játékok adatainak tárolásához. Ehhez JSON fájlokat fogunk használni. A program maga Java
 nyelven fog íródni. A grafikus felülethez viszont JavaFX-et fogunk használni. Verziókezelőnek
 a git-et alkalmazzuk.
+
+## VII. Követelménylista
+
+### Kulcsfontosságú követelmények:
+
+- A felhasználó be és kijelentkezésének lehetősége
+- A felhasználó regisztrációjának a lehetősége
+- A jelszó megváltoztatásának a lehetősége
+- Főoldal felület létrehozása
+- Adatlap felület létrehozása
+- Kijelentkezés lehetősége
+
+### Nem kulcsfontoságú követelmények: 
+
+- Könyvtár felület létrehozása
+- Játék ajánló
+- Játék értékelés
+
+### Képernyőkép tervek
+
+- Bejelentkezés
+- Regisztráció
+- Új jelszó
+- Főoldal
+- Játék adatlap
