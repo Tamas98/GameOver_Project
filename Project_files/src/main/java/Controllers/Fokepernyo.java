@@ -7,15 +7,19 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class Fokepernyo {
 
     @FXML
-    Button signOutButton, mainButton, libButton;
+    Button signOutButton, mainButton, libButton, exitButton;
 
     @FXML
     ImageView rainbowPic;
+
+    @FXML
+    Pane mainPane, libPane;
 
     public void signOutButtonClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Udvozlo.fxml"));
@@ -44,28 +48,19 @@ public class Fokepernyo {
     }
 
     public void mainButtonClicked() throws Exception {
-        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Fokepernyo.fxml"));
-        Stage dataStage = new Stage();
-        dataStage.setTitle("Főképrenyő");
-        dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
-        dataStage.setScene(new Scene(newUser, 960, 720));
-        dataStage.setResizable(false);
-        dataStage.show();
-        Stage stage = (Stage) mainButton.getScene().getWindow();
-        stage.close();
+        mainPane.setVisible(true);
+        libPane.setVisible(false);
 
     }
 
     public void libButtonClicked() throws Exception {
-        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Konyvtar.fxml"));
-        Stage libStage = new Stage();
-        libStage.setTitle("Könyvtár");
-        libStage.getIcons().add(new Image("/Pictures/Icon.png"));
-        libStage.setScene(new Scene(newUser, 810, 600));
-        libStage.setResizable(false);
-        libStage.show();
-        Stage stage = (Stage) libButton.getScene().getWindow();
-        stage.close();
+        mainPane.setVisible(false);
+        libPane.setVisible(true);
+
+    }
+
+    public void exitButtonClicked() throws Exception {
+        System.exit(0);
 
     }
 

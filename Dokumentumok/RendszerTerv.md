@@ -126,7 +126,6 @@ egyszerre a lehető legtöbb ember tudja használni gördülékenyen, akadás é
 | Könyvtár
 | Adatlap
 | Adatbázis
-||
 
 ## V. Funkcionális terv
 
@@ -306,7 +305,6 @@ ki tudnak derülni addig, amíg az a *release* lesz az éles.
 | Könyvtár menüpont
 | Kijelentkezés
 | Játék adatlap megjelenítése
-||
 
 ## IX. Telepítési terv
 
