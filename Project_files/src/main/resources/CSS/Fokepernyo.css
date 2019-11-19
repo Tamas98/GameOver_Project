@@ -70,3 +70,13 @@
 .table-view .table-cell{
     -fx-text-fill: #000000;
 }
+
+.text-field {
+    -fx-background-color: #DCDCDC , #FFFFFF , #FFFFFF;
+    -fx-background-insets: -1 -1 -1 -1, 0 0 0 0, 3 3 3 3;
+}
+
+.text-field:focused {
+    -fx-background-color: #6747CD , #FFFFFF , #FFFFFF;
+    -fx-background-insets: -1 -1 -1 -1, 0 0 0 0, 3 3 3 3;
+}

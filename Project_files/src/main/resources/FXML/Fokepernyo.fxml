@@ -137,6 +137,11 @@
                               <Image url="@../Pictures/fifa.png" />
                            </image>
                         </ImageView>
+                        <TextField layoutX="483.0" layoutY="45.0" prefHeight="34.0" prefWidth="190.0" promptText="Keresés">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </TextField>
                      </children>
                   </AnchorPane>
                </content>
