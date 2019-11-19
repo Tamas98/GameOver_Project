@@ -8,7 +8,7 @@
 - [Látványterv]()
 - [A program futása]()
 - [Megvalósítható?]()
-- [Architekturális terv]()
+- [Követelménylista]()
 
 ## I. Hogyan állunk jelenleg?
 

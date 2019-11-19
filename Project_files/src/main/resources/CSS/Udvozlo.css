@@ -30,8 +30,8 @@
 }
 
 #newPassButton{
-    -fx-background-color: #F4F4F4;
     -fx-text-fill: #a3a3a3;
+    -fx-background-radius: 0px;
 }
 
 #newPassButton:hover{
@@ -39,8 +39,8 @@
 }
 
 #regButton{
-    -fx-background-color: #F4F4F4;
     -fx-text-fill: #6747CD;
+    -fx-background-radius: 0px;
 }
 
 #regButton:hover{
