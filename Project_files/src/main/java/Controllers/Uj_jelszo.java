@@ -21,6 +21,11 @@ public class Uj_jelszo {
     @FXML
     JFXTextField userName, newPassw;
 
+    /**
+     * Új jelszó igényléséhez szükséges mezők kitöltésének ellenőrzése,
+     * üresen hagyott mezők esetén figyelmeztetés
+     * @throws Exception
+     */
     public void emptyCheck() throws Exception{
         warningName.setVisible(false);
         warningPassw.setVisible(false);
@@ -37,7 +42,11 @@ public class Uj_jelszo {
         }
     }
 
-
+    /**
+     * Mentés gombra való kattintás,
+     * megnyílik az Üdvozlő felület
+     * @throws Exception
+     */
     public void saveButtonClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Udvozlo.fxml"));
         Stage regStage = new Stage();

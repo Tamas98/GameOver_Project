@@ -22,6 +22,11 @@ public class Regisztracio {
     @FXML
     Label warningName, warningPassw;
 
+    /**
+     * Regisztrációs mezők helyes kitöltésének ellenőrzése,
+     * üresen hagyott mezők esetén figyelmeztetés
+     * @throws Exception
+     */
     public void registCheck() throws Exception{
         warningName.setVisible(false);
         warningPassw.setVisible(false);
@@ -38,6 +43,11 @@ public class Regisztracio {
         }
     }
 
+    /**
+     * Regsztráció gombra való kattintás,
+     * megnyílik az Üdvözlő felület
+     * @throws Exception
+     */
     public void backToLogin() throws Exception{
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Udvozlo.fxml"));
         Stage regStage = new Stage();

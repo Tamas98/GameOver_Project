@@ -13,6 +13,10 @@ public class Udvozlo {
     @FXML
     Button regButton, newPassButton, signInButton, signInGuestButton;
 
+    /**
+     * Új jelszót igénylő felület megnyitása
+     * @throws Exception
+     */
     public void newPassButtonClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Uj_jelszo.fxml"));
         Stage regStage = new Stage();
@@ -26,6 +30,10 @@ public class Udvozlo {
 
     }
 
+    /**
+     * Regisztációs felülelet megnyitása
+     * @throws Exception
+     */
     public void regButtonClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Regisztracio.fxml"));
         Stage regStage = new Stage();
@@ -39,6 +47,11 @@ public class Udvozlo {
 
     }
 
+    /**
+     * Bejelentkezés gombra való kattintás,
+     * megnyílik a Főképernyő felület
+     * @throws Exception
+     */
     public void signInButtonClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Fokepernyo.fxml"));
         Stage mainStage = new Stage();
@@ -51,6 +64,11 @@ public class Udvozlo {
         stage.close();
     }
 
+    /**
+     * Bejelentkezés vendégként gombra való kattintás,
+     * megnyílik a Főképernyő felület
+     * @throws Exception
+     */
     public void signInGuestButtonClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Fokepernyo.fxml"));
         Stage mainStage = new Stage();

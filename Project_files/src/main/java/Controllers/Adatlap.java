@@ -13,6 +13,11 @@ public class Adatlap {
     @FXML
     Button backButton;
 
+    /**
+     * Vissza gombra való klikkelés,
+     * megnyílik a Főkéőernyő felület
+     * @throws Exception
+     */
     public void backButtonClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Fokepernyo.fxml"));
         Stage dataStage = new Stage();

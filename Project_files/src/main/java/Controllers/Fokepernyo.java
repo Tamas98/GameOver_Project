@@ -21,6 +21,11 @@ public class Fokepernyo {
     @FXML
     Pane mainPane, libPane;
 
+    /**
+     * Kijelentkezés gombra való klikkelés,
+     * megnyílik az Üdvözlő felület
+     * @throws Exception
+     */
     public void signOutButtonClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Udvozlo.fxml"));
         Stage mainStage = new Stage();
@@ -34,6 +39,11 @@ public class Fokepernyo {
 
     }
 
+    /**
+     * Játék borítójára való kattintás,
+     * megnyílik az Adatlap felület
+     * @throws Exception
+     */
     public void rainbowGame() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Adatlap.fxml"));
         Stage dataStage = new Stage();
@@ -47,18 +57,33 @@ public class Fokepernyo {
 
     }
 
+    /**
+     * Főoldal gombra való klikkelés,
+     * megnyílik a Föoldal felület
+     * @throws Exception
+     */
     public void mainButtonClicked() throws Exception {
         mainPane.setVisible(true);
         libPane.setVisible(false);
 
     }
 
+    /**
+     * Könyvtár gombra való klikkelés,
+     * megnyílik a könyvtár felület
+     * @throws Exception
+     */
     public void libButtonClicked() throws Exception {
         mainPane.setVisible(false);
         libPane.setVisible(true);
 
     }
 
+    /**
+     * Kilépés gombra való klikkelés,
+     * a programból való kilépés
+     * @throws Exception
+     */
     public void exitButtonClicked() throws Exception {
         System.exit(0);
 
