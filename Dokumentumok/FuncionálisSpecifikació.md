@@ -54,17 +54,17 @@ az értékelések alapján.
 
 ## IV. Látványterv
 
-A programablak neve: Game Over. A program **sikeres** indítása után a bejelentkező 
+A programablak neve az alkalmazás elindításakor: Bejelentkezés. A program **sikeres** indítása után a bejelentkező 
 képernyő fog megjelenni. A bejelentkező képernyőnek a felső részének a középénél
 lehet majd látni magának az alkalmazásnak a nevét kiírva, tehát a Game Over vagy
 pedig az alkalmazásnak megfelelő szöveg fog látszani. A szöveghez képest lennébb 
 tudja majd a felhasználó megadni a bejelentkezési adatait (Felhasználónév - Text Area,
-Jelszó - Text Area), mind ezek egymás mellett elhelyezve. A belépést biztosító rész alatt
-lesznek láthatóak a **navigáló gombok**. Elöszőr a bejelentkezést biztosító gomb, "**Log In**"
+Jelszó - Text Area), mind ezek egymás mellett elhelyezve. Ha elfelejtettük volna a belépéshez szükséges 
+adatainkat, akkor az **Elfelejtetted a jelszavad?**-ra kattintva módosítást biztosító ablak ugrik fel. A belépést biztosító rész alatt
+lesznek láthatóak a **navigáló gombok**. Elöszőr a bejelentkezést biztosító gomb, "**Bejelentkezés**"
 felirattal, alatta, ha nem szeretnénk kitölteni a bejelentkezéshez szükséges mezőket,
-akkor, "**Bejelentkezés vendégként**" feliratú gomb biztosítja a programba való belépést, majd
-az ablak bal alsó részénél lesz látható az "**Elfelejtett jelszó**" feliratú gomb, illetve
-jobb alsó sarokban a "**Regisztráció**" gomb helyezkedik el. Ha a felhasználó még új és szeretne
+akkor, "**Bejelentkezés vendégként**" feliratú gomb biztosítja a programba való belépést, illetve
+jobb alsó sarokban a "**Regisztrálj**" gomb helyezkedik el. Ha a felhasználó még új és szeretne
 regisztrálni, akkor az annak megfelelő gombot megnyomva tudja elérni a regisztrációi felületet.
 A regisztráció felületen, a bejelentkező oldalhoz hasonlóan, középen felül lesz megjelenítve
 egy "**Regisztráció**" szöveg. Alatta lehet megadni a felhasználónevet és a hozzátartozó jelszót,
@@ -76,9 +76,9 @@ szöveggel ellátott gombbal tudunk feliratkozni ami egy felugró ablakot eredé
 a "_Sikeres regisztráció!_" felirat látható lehetőség szerint zöld színnel és egy gomb, ami
 vissza visz a bejelentkezési képernyőre, "**Bejelentkezés**" felirattal. Amennyiben, ha
 elfelejtettük volna a megadott jelszónkat és mindenféle képpen beszeretnénk lépni a már
-regisztrált profilunkkal, akkor az "**Elfelejtett jelszó**" gombot megnyomva megjelenik, az
+regisztrált profilunkkal, akkor az "**Elfeletetted a jelszavad?**" gombot megnyomva megjelenik, az
 erre a célra megvalósított felület. Itt az eddigiekhez hasonlóan középen felül lesz az ablak
-címe: "**Jelszó módosítása**" és alatta adható meg az új adat, és egy gomb "**Mentés**" felirattal
+címe: "**Új jelszó**" és alatta adható meg az új adat, és egy gomb "**Mentés**" felirattal
 ami elmenti az új adatot és vissza visz egyúttal a bejelentkezési képernyőre. Amennyiben a felhasználó
 bejelentkezéssel lépett be, úgy az adott felhasználó által kedvelt témájú játékok címei (3 db)
 jelenik meg ajánlásként. Annak az eldöntésére, hogy az ajánlott játék tetszik-e a felhasználónak, erre gombok állnak a rendelkezésére
@@ -93,14 +93,16 @@ róla. Ezen a felületen balul egy borítókép látszódik a játékról és a 
 jelennek meg az információk róla, például a _kiadója, kiadási dátuma, témája, leírás a játékkal kapcsolatban_. 
 Ugyan ezen a felületen alul van lehetőség az értékeléshez például egy egytől ötig terjedő skálán, csillagokkal
 szemléltetve. Lehetőséget biztosítunk a felhasználónak, hogy megtekintse az
-adott játéknak az előzetesét egy "**Előzetes megtekintése**" feliratú gombbal vagy helyette egy _link_ lesz látható.
+adott játéknak az előzetesét egy "**Trailer**" feliratú gombbal vagy helyette egy _link_ lesz látható.
 Ha a felhasználót meggyőzte a játék akkor elmentheti a könyvtárába egy gomb nyomással, ennek a gombnak a neve "**Mentés a könyvtárba**" lenne.
 Jobb alul egy gomb biztosítja a visszalépést további játékok kereséséhez (tehát vissza visz a főoldalra) 
 "**Vissza a főoldalra**" felirattal. Ha a menü sorban a felhasználó a könyvtárra kattint, akkor az adott felhasználó
 könyvtárának a felülete fog megjelenni. Az ablak címe itt is középen felül lesz látható, "**Játékaim**" felirattal.
 Ezen a felületen lesznek majd láthatóak azok a játékok amiket a felhasználó "elmentett", illetve egy olyan gomb ami vissza visz
-a főoldalra. Ha a főoldalon jobb alul látható "**Kilépés**" feliratú gombra rákattintunk, akkor az alkalmazás
-bezáródását vonja maga után. Mindig amikor egy gombot használ a felhasználó, akkor megváltozik a gomb háttere, majd vissza az eredetire..
+a főoldalra. Ha a főoldalon a menü sorban lesz a kilépést biztosító "**Kilépés**" feliratú gomb, ami az alkalmazás
+bezáródását vonja maga után.Ha csak kijelentkezni szeretnénk, akkor a **Kijelentkezés** gombra kell kattintani, ami szintén a 
+főoldalnak a menüsorjaiban lesz elérhető. A főoldal menüsorjában szereplő gombok előtt egy jelképes motívum látható.
+Mindig amikor egy gombot használ a felhasználó, akkor megváltozik a gomb háttere, majd vissza az eredetire.
 
 ## V. A program futása
 
