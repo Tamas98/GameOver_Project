@@ -63,6 +63,18 @@
                   <Font name="Arial" size="15.0" />
                </font>
             </Label>
+            <Label fx:id="saveSuc" layoutX="356.0" layoutY="437.0" prefHeight="24.0" prefWidth="132.0" text="Sikeres mentés!" textFill="#3dda35" visible="false">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Pictures/saveSuc.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
          </children></Pane>
       <Pane prefHeight="125.0" prefWidth="810.0" style="-fx-background-color: #6747CD;">
          <children>
@@ -87,7 +99,7 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton id="saveButton" fx:id="saveButton" layoutX="620.0" layoutY="82.0" prefHeight="24.0" text="Mentés a könyvtárba" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton onAction="#saveButtonClicked" id="saveButton" fx:id="saveButton" layoutX="620.0" layoutY="82.0" prefHeight="24.0" text="Mentés a könyvtárba" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
