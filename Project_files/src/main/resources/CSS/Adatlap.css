@@ -26,3 +26,12 @@
 .text-area .scroll-pane .content{
     -fx-background-color: transparent;
 }
+
+#trailerButton{
+    -fx-text-fill: #6747CD;
+    -fx-background-radius: 0px;
+}
+
+#trailerButton:hover {
+    -fx-text-fill: #000000;
+}

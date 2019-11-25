@@ -7,15 +7,17 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import java.awt.*;
+import java.net.URI;
 
 public class Adatlap {
 
     @FXML
-    Button backButton;
+    Button backButton, trailerButton;
 
     /**
      * Vissza gombra való klikkelés,
-     * megnyílik a Főkéőernyő felület
+     * megnyílik a Főképernyő felület
      * @throws Exception
      */
     public void backButtonClicked() throws Exception {
@@ -28,6 +30,16 @@ public class Adatlap {
         dataStage.show();
         Stage stage = (Stage) backButton.getScene().getWindow();
         stage.close();
+    }
+
+    /**
+     * Trailer gombra való klikkelés,
+     * megnyílik a böngészőben az adott játék trailer videója
+     * @throws Exception
+     */
+    public void trailerButtonClicked() throws Exception {
+        Desktop browser = Desktop.getDesktop();
+        browser.browse(new URI("https://youtu.be/6wlvYh0h63k"));
     }
 
 }
