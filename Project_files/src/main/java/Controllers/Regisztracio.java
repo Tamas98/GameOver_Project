@@ -30,7 +30,9 @@ public class Regisztracio {
      * üresen hagyott mezők esetén figyelmeztetés
      * @throws Exception
      */
-    public void registCheck() throws Exception{
+
+    public void registCheck()
+    throws Exception{
         warningName.setVisible(false);
         warningPassw.setVisible(false);
         if(registName.getText().equals("") && registPasw.getText().equals("")){
