@@ -15,10 +15,13 @@ public class Regisztracio {
 
     @FXML
     Button registButton;
+
     @FXML
     TextField registName;
+
     @FXML
     PasswordField registPasw;
+
     @FXML
     Label warningName, warningPassw;
 

@@ -62,6 +62,7 @@ public class Udvozlo {
         mainStage.show();
         Stage stage = (Stage) signInButton.getScene().getWindow();
         stage.close();
+
     }
 
     /**
@@ -79,6 +80,7 @@ public class Udvozlo {
         mainStage.show();
         Stage stage = (Stage) signInGuestButton.getScene().getWindow();
         stage.close();
+
     }
 
 }

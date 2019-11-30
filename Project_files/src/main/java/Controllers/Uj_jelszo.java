@@ -32,7 +32,6 @@ public class Uj_jelszo {
         if(userName.getText().equals("") && newPassw.getText().equals("")){
             warningName.setVisible(true);
             warningPassw.setVisible(true);
-
         } else if(userName.getText().equals("")) {
             warningName.setVisible(true);
         } else if(newPassw.getText().equals("")) {
@@ -40,6 +39,7 @@ public class Uj_jelszo {
         } else {
             saveButtonClicked();
         }
+
     }
 
     /**
