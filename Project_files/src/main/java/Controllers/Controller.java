@@ -11,11 +11,11 @@ import java.util.List;
 
 public abstract class Controller<T> {
 
-    Injector gameInjector = Guice.createInjector(new PersistenceModule("game"));;
+    private Injector gameInjector = Guice.createInjector(new PersistenceModule("game"));;
 
     GameDAO gameDao = gameInjector.getInstance(GameDAO.class);
 
-    Injector userInjector = Guice.createInjector(new PersistenceModule("user"));;
+    private Injector userInjector = Guice.createInjector(new PersistenceModule("user"));;
 
     UserDAO userDao = userInjector.getInstance(UserDAO.class);
 

@@ -48,7 +48,16 @@ public class Regisztracio extends Controller<User> {
         } else if(registPasw.getText().equals("")) {
             warningPassw.setVisible(true);
         } else {
-            backToLogin();
+            if (getData().stream().anyMatch(e -> e.getUsername().equals(registName.getText()))) {
+                //TODO: Visszajelzés, hogy létezik már a felhasználó
+            } else {
+                User newUser = User.builder()
+                        .username(registName.getText())
+                        .password(registPasw.getText()).build();
+
+                userDao.persist(newUser);
+                backToLogin();
+            }
         }
     }
 

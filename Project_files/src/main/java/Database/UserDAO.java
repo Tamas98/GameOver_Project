@@ -11,6 +11,6 @@ public class UserDAO extends GenericJpaDao {
     }
 
     public List<User> getAllUser(){
-        return entityManager.createQuery("Select u from User").getResultList();
+        return entityManager.createQuery("Select u from User u").getResultList();
     }
 }
