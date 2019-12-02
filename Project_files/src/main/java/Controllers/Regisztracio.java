@@ -1,5 +1,7 @@
 package Controllers;
 
+import Database.User;
+import Database.UserDAO;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -11,7 +13,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-public class Regisztracio {
+import java.util.List;
+
+public class Regisztracio extends Controller<User> {
 
     @FXML
     Button registButton;
@@ -66,4 +70,8 @@ public class Regisztracio {
 
     }
 
+    @Override
+    public List<User> getData() {
+        return userDao.getAllUser();
+    }
 }
