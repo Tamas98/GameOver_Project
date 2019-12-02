@@ -53,7 +53,7 @@ public class Regisztracio extends Controller<User> {
             } else {
                 User newUser = User.builder()
                         .username(registName.getText())
-                        .password(registPasw.getText()).build();
+                        .password(hasher(registPasw.getText())).build();
 
                 userDao.persist(newUser);
                 backToLogin();
@@ -81,5 +81,34 @@ public class Regisztracio extends Controller<User> {
     @Override
     public List<User> getData() {
         return userDao.getAllUser();
+    }
+
+
+    private String hasher(String string) {
+        String hash1 = "xtrezrtu6tfia2gsudhijdad";
+        String hash2 = "ddbo1e3768798p3ue1hbdncv";
+        return hash1 + caesarCoder(string) + hash2;
+    }
+
+    private StringBuffer caesarCoder(String passwd) {
+        int s = 5;
+        StringBuffer result= new StringBuffer();
+
+        for (int i=0; i<passwd.length(); i++)
+        {
+            if (Character.isUpperCase(passwd.charAt(i)))
+            {
+                char ch = (char)(((int)passwd.charAt(i) +
+                        s - 65) % 26 + 65);
+                result.append(ch);
+            }
+            else
+            {
+                char ch = (char)(((int)passwd.charAt(i) +
+                        s - 97) % 26 + 97);
+                result.append(ch);
+            }
+        }
+        return result;
     }
 }
