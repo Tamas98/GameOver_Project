@@ -1,5 +1,7 @@
 package Controllers;
 
+import Database.Game;
+import Database.User;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,8 +12,10 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import java.awt.*;
 import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Adatlap {
+public class Adatlap extends Controller<User>{
 
     //TODO: A klikkelt játék megjelenítése.
     //TODO: Mentése a könyvtárban működése.
@@ -57,7 +61,10 @@ public class Adatlap {
      */
     public void saveButtonClicked()throws Exception {
         saveSuc.setVisible(true);
-
     }
 
+    @Override
+    public List<User> getData() {
+        return null;
+    }
 }

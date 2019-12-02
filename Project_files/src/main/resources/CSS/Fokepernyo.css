@@ -80,3 +80,13 @@
     -fx-background-color: #6747CD , #FFFFFF , #FFFFFF;
     -fx-background-insets: -1 -1 -1 -1, 0 0 0 0, 3 3 3 3;
 }
+
+.list-cell{
+    -fx-max-width: 20rem;
+    -fx-max-height: 20rem;
+}
+
+.list-view .list-cell:even {
+    -fx-background-color: lightgray;
+    -fx-text-fill: black;
+}

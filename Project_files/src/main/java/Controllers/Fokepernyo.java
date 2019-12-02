@@ -1,13 +1,18 @@
 package Controllers;
 
+import javafx.event.Event;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Control;
+import javafx.scene.control.TableView;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -41,8 +46,9 @@ public class Fokepernyo implements Initializable {
         mainStage.show();
         Stage stage = (Stage) signOutButton.getScene().getWindow();
         stage.close();
-
     }
+
+
 
     /**
      * Játék borítójára való kattintás,
@@ -59,7 +65,6 @@ public class Fokepernyo implements Initializable {
         dataStage.show();
         Stage stage = (Stage) rainbowPic.getScene().getWindow();
         stage.close();
-
     }
 
     /**

@@ -15,6 +15,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.util.List;
+import java.util.Optional;
 
 public class Udvozlo extends Controller<User>{
 
@@ -27,8 +28,10 @@ public class Udvozlo extends Controller<User>{
     @FXML
     PasswordField passWord;
 
+    static Optional<User> loggedUser;
+
     static boolean loggedIn = false;
-    
+
     @FXML
     Pane alertPane, signPane;
 
@@ -72,7 +75,8 @@ public class Udvozlo extends Controller<User>{
      * @throws Exception
      */
     public void signInButtonClicked() throws Exception {
-        if(getData().stream().anyMatch(e -> e.getUsername().equals(userName.getText()) && e.getPassword().equals(Regisztracio.hasher(passWord.getText())))){
+        loggedUser = getData().stream().filter(e -> e.getUsername().equals(userName.getText()) && e.getPassword().equals(Regisztracio.hasher(passWord.getText()))).findFirst();
+        if(loggedUser.isPresent()){
             loggedIn = true;
             Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Fokepernyo.fxml"));
             Stage mainStage = new Stage();
@@ -100,7 +104,6 @@ public class Udvozlo extends Controller<User>{
      * @throws Exception
      */
     public void signInGuestButtonClicked() throws Exception {
-        //TODO: A vendég felhasználók számára ne legyen elérhető a könyvtár
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Fokepernyo.fxml"));
         Stage mainStage = new Stage();
         mainStage.setTitle("Főképernyő");

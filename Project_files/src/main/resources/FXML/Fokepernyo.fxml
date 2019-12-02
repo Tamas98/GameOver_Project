@@ -77,11 +77,6 @@
                               <Font name="Impact" size="40.0" />
                            </font>
                         </Label>
-                        <Label layoutX="32.0" layoutY="351.0" text="Böngészés" textFill="#545454">
-                           <font>
-                              <Font name="Impact" size="40.0" />
-                           </font>
-                        </Label>
                         <ImageView id="rainbowPic" fx:id="rainbowPic" fitHeight="190.0" fitWidth="285.0" layoutX="51.0" layoutY="102.0" onMouseClicked="#rainbowGame" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/r6s.png" />
@@ -97,6 +92,11 @@
                               <Image url="@../Pictures/nfs.png" />
                            </image>
                         </ImageView>
+                        <Label layoutX="32.0" layoutY="351.0" text="Böngészés" textFill="#545454">
+                           <font>
+                              <Font name="Impact" size="40.0" />
+                           </font>
+                        </Label>
                         <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="211.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/ds.png" />
