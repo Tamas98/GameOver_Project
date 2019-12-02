@@ -60,7 +60,6 @@ public class Regisztracio extends Controller<User> {
             }
         }
     }
-
     /**
      * Regsztráció gombra való kattintás,
      * megnyílik az Üdvözlő felület
