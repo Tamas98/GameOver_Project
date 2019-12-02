@@ -1,17 +1,29 @@
 package Controllers;
 
+import Database.Game;
+import Database.User;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-public class Udvozlo {
+import java.util.List;
+
+public class Udvozlo extends Controller<User>{
 
     @FXML
     Button regButton, newPassButton, signInButton, signInGuestButton;
+
+    @FXML
+    TextField userName;
+
+    @FXML
+    PasswordField passWord;
 
     /**
      * Új jelszót igénylő felület megnyitása
@@ -53,15 +65,19 @@ public class Udvozlo {
      * @throws Exception
      */
     public void signInButtonClicked() throws Exception {
-        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Fokepernyo.fxml"));
-        Stage mainStage = new Stage();
-        mainStage.setTitle("Főképernyő");
-        mainStage.getIcons().add(new Image("/Pictures/Icon.png"));
-        mainStage.setScene(new Scene(newUser, 960, 720));
-        mainStage.setResizable(false);
-        mainStage.show();
-        Stage stage = (Stage) signInButton.getScene().getWindow();
-        stage.close();
+        if(getData().stream().anyMatch(e -> e.getUsername().equals(userName.getText()) && e.getPassword().equals(Regisztracio.hasher(passWord.getText())))){
+            Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Fokepernyo.fxml"));
+            Stage mainStage = new Stage();
+            mainStage.setTitle("Főképernyő");
+            mainStage.getIcons().add(new Image("/Pictures/Icon.png"));
+            mainStage.setScene(new Scene(newUser, 960, 720));
+            mainStage.setResizable(false);
+            mainStage.show();
+            Stage stage = (Stage) signInButton.getScene().getWindow();
+            stage.close();
+        }else{
+            //TODO: Visszajelzés,hogy hibás felhasználónév vagy jelszó.
+        }
 
     }
 
@@ -83,4 +99,8 @@ public class Udvozlo {
 
     }
 
+    @Override
+    public List<User> getData() {
+        return userDao.getAllUser();
+    }
 }

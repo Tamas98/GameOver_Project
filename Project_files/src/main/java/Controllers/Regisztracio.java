@@ -84,13 +84,13 @@ public class Regisztracio extends Controller<User> {
     }
 
 
-    private String hasher(String string) {
+    public static String hasher(String string) {
         String hash1 = "xtrezrtu6tfia2gsudhijdad";
         String hash2 = "ddbo1e3768798p3ue1hbdncv";
         return hash1 + caesarCoder(string) + hash2;
     }
 
-    private StringBuffer caesarCoder(String passwd) {
+    private static StringBuffer caesarCoder(String passwd) {
         int s = 5;
         StringBuffer result= new StringBuffer();
 
