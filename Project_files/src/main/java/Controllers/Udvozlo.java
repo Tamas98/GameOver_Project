@@ -2,6 +2,7 @@ package Controllers;
 
 import Database.Game;
 import Database.User;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.util.List;
@@ -17,13 +19,16 @@ import java.util.List;
 public class Udvozlo extends Controller<User>{
 
     @FXML
-    Button regButton, newPassButton, signInButton, signInGuestButton;
+    Button regButton, newPassButton, signInButton, signInGuestButton, alertButton;
 
     @FXML
     TextField userName;
 
     @FXML
     PasswordField passWord;
+
+    @FXML
+    Pane alertPane, signPane;
 
     /**
      * Új jelszót igénylő felület megnyitása
@@ -76,9 +81,14 @@ public class Udvozlo extends Controller<User>{
             Stage stage = (Stage) signInButton.getScene().getWindow();
             stage.close();
         }else{
-            //TODO: Visszajelzés,hogy hibás felhasználónév vagy jelszó.
+            alertPane.setVisible(true);
+            signPane.setVisible(false);
         }
+    }
 
+    public void alertButtonClicked() throws Exception {
+        signPane.setVisible(true);
+        alertPane.setVisible(false);
     }
 
     /**
