@@ -25,6 +25,8 @@ public class Udvozlo extends Controller<User>{
     @FXML
     PasswordField passWord;
 
+    static boolean loggedIn = false;
+
     /**
      * Új jelszót igénylő felület megnyitása
      * @throws Exception
@@ -66,6 +68,7 @@ public class Udvozlo extends Controller<User>{
      */
     public void signInButtonClicked() throws Exception {
         if(getData().stream().anyMatch(e -> e.getUsername().equals(userName.getText()) && e.getPassword().equals(Regisztracio.hasher(passWord.getText())))){
+            loggedIn = true;
             Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Fokepernyo.fxml"));
             Stage mainStage = new Stage();
             mainStage.setTitle("Főképernyő");
@@ -87,6 +90,7 @@ public class Udvozlo extends Controller<User>{
      * @throws Exception
      */
     public void signInGuestButtonClicked() throws Exception {
+        //TODO: A vendég felhasználók számára ne legyen elérhető a könyvtár
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Fokepernyo.fxml"));
         Stage mainStage = new Stage();
         mainStage.setTitle("Főképernyő");

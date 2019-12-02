@@ -2,6 +2,7 @@ package Controllers;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -10,7 +11,10 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
-public class Fokepernyo {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class Fokepernyo implements Initializable {
 
     @FXML
     Button signOutButton, mainButton, libButton, exitButton;
@@ -27,6 +31,7 @@ public class Fokepernyo {
      * @throws Exception
      */
     public void signOutButtonClicked() throws Exception {
+        Udvozlo.loggedIn = false;
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Udvozlo.fxml"));
         Stage mainStage = new Stage();
         mainStage.setTitle("Bejelentkezés");
@@ -89,4 +94,10 @@ public class Fokepernyo {
 
     }
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        if(!Udvozlo.loggedIn){
+            libButton.setDisable(true);
+        }
+    }
 }

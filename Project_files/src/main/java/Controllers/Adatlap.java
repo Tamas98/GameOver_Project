@@ -13,6 +13,9 @@ import java.net.URI;
 
 public class Adatlap {
 
+    //TODO: A klikkelt játék megjelenítése.
+    //TODO: Mentése a könyvtárban működése.
+
     @FXML
     Button backButton, trailerButton;
 
