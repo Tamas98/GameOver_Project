@@ -26,7 +26,7 @@ public class MainApplication extends Application {
         primaryStage.setResizable(false);
         primaryStage.show();
 
-        Injector injector = Guice.createInjector(new PersistenceModule("game"));
+      /*  Injector injector = Guice.createInjector(new PersistenceModule("game"));
         GameDAO gameDao = injector.getInstance(GameDAO.class);
         Game game = Game.builder()
                 .releaseDate(new Date())
@@ -43,7 +43,7 @@ public class MainApplication extends Application {
                 .description("safshaniognioasngivopnasivnafnpapdfanpsfdnapfsnapfa")
                 .build();
         gameDao.persist(game);
-        gameDao.persist(game2);
+        gameDao.persist(game2);*/
 
     }
 
