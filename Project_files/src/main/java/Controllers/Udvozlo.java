@@ -1,8 +1,6 @@
 package Controllers;
 
-import Database.Game;
 import Database.User;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -28,12 +26,12 @@ public class Udvozlo extends Controller<User>{
     @FXML
     PasswordField passWord;
 
+    @FXML
+    Pane alertPane, signPane;
+
     static Optional<User> loggedUser;
 
     static boolean loggedIn = false;
-
-    @FXML
-    Pane alertPane, signPane;
 
     /**
      * Új jelszót igénylő felület megnyitása
@@ -76,7 +74,7 @@ public class Udvozlo extends Controller<User>{
      */
     public void signInButtonClicked() throws Exception {
         loggedUser = getData().stream().filter(e -> e.getUsername().equals(userName.getText()) && e.getPassword().equals(Regisztracio.hasher(passWord.getText()))).findFirst();
-        if(loggedUser.isPresent()){
+        if(loggedUser.isPresent()) {
             loggedIn = true;
             Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Fokepernyo.fxml"));
             Stage mainStage = new Stage();
@@ -87,15 +85,23 @@ public class Udvozlo extends Controller<User>{
             mainStage.show();
             Stage stage = (Stage) signInButton.getScene().getWindow();
             stage.close();
-        }else{
+        } else {
             alertPane.setVisible(true);
             signPane.setVisible(false);
+
         }
+
     }
 
+    /**
+     * OK gombra való kattintás,
+     * hibás jelszó vagy felhasználónév esetén
+     * @throws Exception
+     */
     public void alertButtonClicked() throws Exception {
         signPane.setVisible(true);
         alertPane.setVisible(false);
+
     }
 
     /**
@@ -119,5 +125,7 @@ public class Udvozlo extends Controller<User>{
     @Override
     public List<User> getData() {
         return userDao.getAllUser();
+
     }
+    
 }
