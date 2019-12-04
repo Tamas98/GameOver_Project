@@ -1,18 +1,13 @@
 package Controllers;
 
-import javafx.event.Event;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Control;
-import javafx.scene.control.TableView;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -25,7 +20,7 @@ public class Fokepernyo implements Initializable {
     Button signOutButton, mainButton, libButton, exitButton;
 
     @FXML
-    ImageView rainbowPic;
+    ImageView rainbowPic, dsPic;
 
     @FXML
     Pane mainPane, libPane;
@@ -51,12 +46,23 @@ public class Fokepernyo implements Initializable {
 
 
     /**
-     * Játék borítójára való kattintás,
-     * megnyílik az Adatlap felület
+     * Játék borítójára való kattintással,
+     * megnyílik a játék adatlapja
      * @throws Exception
      */
     public void rainbowGame() throws Exception {
-        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Adatlap.fxml"));
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/GamesFXML/R6_Adatlap.fxml"));
+        Stage dataStage = new Stage();
+        dataStage.setTitle("Adatlap");
+        dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        dataStage.setScene(new Scene(newUser, 810, 600));
+        dataStage.setResizable(false);
+        dataStage.show();
+        Stage stage = (Stage) rainbowPic.getScene().getWindow();
+        stage.close();
+    }
+    public void dsGame() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/GamesFXML/DS_Adatlap.fxml"));
         Stage dataStage = new Stage();
         dataStage.setTitle("Adatlap");
         dataStage.getIcons().add(new Image("/Pictures/Icon.png"));

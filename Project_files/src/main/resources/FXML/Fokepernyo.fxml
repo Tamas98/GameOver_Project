@@ -97,7 +97,7 @@
                               <Font name="Impact" size="40.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="211.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView id="dsPic" fx:id="dsPic" fitHeight="190.0" fitWidth="285.0" layoutX="211.0" layoutY="102.0" onMouseClicked="#dsGame" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/ds.png" />
                            </image>

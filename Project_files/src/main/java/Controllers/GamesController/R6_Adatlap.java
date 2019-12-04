@@ -1,5 +1,6 @@
-package Controllers;
+package Controllers.GamesController;
 
+import Controllers.Controller;
 import Database.Game;
 import Database.User;
 import javafx.fxml.FXML;
@@ -15,7 +16,7 @@ import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Adatlap extends Controller<User>{
+public class R6_Adatlap extends Controller<User> {
 
     //TODO: A klikkelt játék megjelenítése.
     //TODO: Mentése a könyvtárban működése.
