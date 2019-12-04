@@ -82,7 +82,7 @@
                               <Image url="@../Pictures/r6s.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="49.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView id="pubgPic" fx:id="pubgPic" fitHeight="190.0" fitWidth="285.0" layoutX="49.0" layoutY="420.0" onMouseClicked="#pubgGame" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/pubg.png" />
                            </image>

@@ -20,7 +20,7 @@ public class Fokepernyo implements Initializable {
     Button signOutButton, mainButton, libButton, exitButton;
 
     @FXML
-    ImageView rainbowPic, dsPic, nfsPic;
+    ImageView rainbowPic, dsPic, nfsPic, pubgPic;
 
     @FXML
     Pane mainPane, libPane;
@@ -81,6 +81,17 @@ public class Fokepernyo implements Initializable {
         dataStage.setResizable(false);
         dataStage.show();
         Stage stage = (Stage) nfsPic.getScene().getWindow();
+        stage.close();
+    }
+    public void pubgGame() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/GamesFXML/PUBG_Adatlap.fxml"));
+        Stage dataStage = new Stage();
+        dataStage.setTitle("Adatlap");
+        dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        dataStage.setScene(new Scene(newUser, 810, 600));
+        dataStage.setResizable(false);
+        dataStage.show();
+        Stage stage = (Stage) pubgPic.getScene().getWindow();
         stage.close();
     }
 
