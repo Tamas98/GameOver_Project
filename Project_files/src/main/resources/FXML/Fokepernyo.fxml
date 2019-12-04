@@ -87,7 +87,7 @@
                               <Image url="@../Pictures/pubg.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="373.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView id="nfsPic" fx:id="nfsPic" fitHeight="190.0" fitWidth="285.0" layoutX="373.0" layoutY="102.0" onMouseClicked="#nfsGame" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/nfs.png" />
                            </image>

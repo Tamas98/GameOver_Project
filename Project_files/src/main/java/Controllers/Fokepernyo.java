@@ -20,7 +20,7 @@ public class Fokepernyo implements Initializable {
     Button signOutButton, mainButton, libButton, exitButton;
 
     @FXML
-    ImageView rainbowPic, dsPic;
+    ImageView rainbowPic, dsPic, nfsPic;
 
     @FXML
     Pane mainPane, libPane;
@@ -69,7 +69,18 @@ public class Fokepernyo implements Initializable {
         dataStage.setScene(new Scene(newUser, 810, 600));
         dataStage.setResizable(false);
         dataStage.show();
-        Stage stage = (Stage) rainbowPic.getScene().getWindow();
+        Stage stage = (Stage) dsPic.getScene().getWindow();
+        stage.close();
+    }
+    public void nfsGame() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/GamesFXML/NFS_Adatlap.fxml"));
+        Stage dataStage = new Stage();
+        dataStage.setTitle("Adatlap");
+        dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        dataStage.setScene(new Scene(newUser, 810, 600));
+        dataStage.setResizable(false);
+        dataStage.show();
+        Stage stage = (Stage) nfsPic.getScene().getWindow();
         stage.close();
     }
 
