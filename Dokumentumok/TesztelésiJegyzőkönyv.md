@@ -6,6 +6,9 @@
 |  "Regisztráció" gomb megjeleníti-e a regisztráció felületet? |  Egérrel bal click gombra. |  Megnyílik a regisztrációs felület. |
 |  "Új jelszó" gomb megjeleníti-e a kívánt felületet? | Egérrel bal click a gombra.  | Megnyílik az új jelszós felület.  |
 |  "Bejelentkezés" gomb a helyesen megadott adatokkal beengedi a felhasználót. |  "Felhasználó" és "Jelszó" mező helyes kitöltése. |   |
+|  "Bejelentkezés" gomb helytelenül megadott adatokkal nem engedi be a felhasználót. |  Egérrel bal click a gombra. |  Sikertelen bejelentkezés |
+|  Helytelen felhasználónév vagy jeleszó panel "OK" gomb | Egérrel bal click a gombra.  | Sikeres visszajutás újra a bejelentkező felületre  |
+|  "Bejelentkezés vendégként" beengedi a nem regisztrált felhasználót. | Egérrel bal click a gombra.  | Sikeres bejelentkezés  |
 | Helytelenül megadott felhasználó és/vagy jelszó.  |  Helytelenül beírt felhasználó és/vagy jelszó. |   |
 |  Regisztráció felületen a regisztráció helyessége. | A felhasználó egy felhasználó nevet és jelszót ad meg.  |   |
 | "Kilenetkezés" gomb sikeres kijelentkezést eredményez.  |  Egérrel bal click a "kijelentkezés" gombra. | Megnyílik a bejelentkezési felület.  |
