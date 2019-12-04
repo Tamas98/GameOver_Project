@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import com.jfoenix.controls.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.shape.*?>
@@ -49,10 +50,17 @@
                   <Font name="Arial Bold" size="16.0" />
                </font>
             </Label>
-            <JFXButton id="backButton" fx:id="backButton" layoutX="493.0" layoutY="242.0" onAction="#backButtonClicked" prefHeight="33.0" prefWidth="69.0" text="Vissza" textFill="#545454">
+            <JFXButton id="backButton" fx:id="backButton" layoutX="493.0" layoutY="242.0" onAction="#backButtonClicked" prefHeight="33.0" prefWidth="90.0" text="Vissza" textFill="#545454">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Pictures/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </JFXButton>
          </children>
       </Pane>
