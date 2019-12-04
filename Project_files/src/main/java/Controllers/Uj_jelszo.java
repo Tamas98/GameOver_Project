@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 public class Uj_jelszo {
 
     @FXML
-    Button saveButton;
+    Button saveButton, backButton;
 
     @FXML
     Label warningName, warningPassw;
@@ -44,18 +44,36 @@ public class Uj_jelszo {
 
     /**
      * Mentés gombra való kattintás,
-     * megnyílik az Üdvozlő felület
+     * megnyílik az Üdvözlő felület
      * @throws Exception
      */
     public void saveButtonClicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Udvozlo.fxml"));
         Stage regStage = new Stage();
-        regStage.setTitle("Regisztráció");
+        regStage.setTitle("Game_Over");
         regStage.getIcons().add(new Image("/Pictures/Icon.png"));
         regStage.setScene(new Scene(newUser, 480, 720));
         regStage.setResizable(false);
         regStage.show();
         Stage stage = (Stage) saveButton.getScene().getWindow();
+        stage.close();
+
+    }
+
+    /**
+     * Vissza gombra való kattintás,
+     * visszalépés az Üdvözlő felületre
+     * @throws Exception
+     */
+    public void backButtonClicked() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Udvozlo.fxml"));
+        Stage regStage = new Stage();
+        regStage.setTitle("Game_Over");
+        regStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        regStage.setScene(new Scene(newUser, 480, 720));
+        regStage.setResizable(false);
+        regStage.show();
+        Stage stage = (Stage) backButton.getScene().getWindow();
         stage.close();
 
     }

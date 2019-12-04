@@ -18,7 +18,7 @@ import java.util.List;
 public class Regisztracio extends Controller<User> {
 
     @FXML
-    Button registButton;
+    Button registButton, backButton;
 
     @FXML
     TextField registName;
@@ -74,6 +74,24 @@ public class Regisztracio extends Controller<User> {
         regStage.setResizable(false);
         regStage.show();
         Stage stage = (Stage) registButton.getScene().getWindow();
+        stage.close();
+
+    }
+
+    /**
+     * Vissza gombra való kattintás,
+     * visszalépés az Üdvözlő felületre
+     * @throws Exception
+     */
+    public void backButtonClicked() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Udvozlo.fxml"));
+        Stage regStage = new Stage();
+        regStage.setTitle("Game_Over");
+        regStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        regStage.setScene(new Scene(newUser, 480, 720));
+        regStage.setResizable(false);
+        regStage.show();
+        Stage stage = (Stage) backButton.getScene().getWindow();
         stage.close();
 
     }
