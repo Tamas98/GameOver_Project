@@ -20,7 +20,7 @@ public class Fokepernyo implements Initializable {
     Button signOutButton, mainButton, libButton, exitButton;
 
     @FXML
-    ImageView rainbowPic, dsPic, nfsPic, pubgPic;
+    ImageView rainbowPic, dsPic, nfsPic, pubgPic, rd2Pic,rlPic,codPic;
 
     @FXML
     Pane mainPane, libPane;
@@ -92,6 +92,39 @@ public class Fokepernyo implements Initializable {
         dataStage.setResizable(false);
         dataStage.show();
         Stage stage = (Stage) pubgPic.getScene().getWindow();
+        stage.close();
+    }
+    public void reddead2Game() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/GamesFXML/RD2_Adatlap.fxml"));
+        Stage dataStage = new Stage();
+        dataStage.setTitle("Adatlap");
+        dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        dataStage.setScene(new Scene(newUser, 810, 600));
+        dataStage.setResizable(false);
+        dataStage.show();
+        Stage stage = (Stage) rd2Pic.getScene().getWindow();
+        stage.close();
+    }
+    public void rocketleagueGame() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/GamesFXML/RL_Adatlap.fxml"));
+        Stage dataStage = new Stage();
+        dataStage.setTitle("Adatlap");
+        dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        dataStage.setScene(new Scene(newUser, 810, 600));
+        dataStage.setResizable(false);
+        dataStage.show();
+        Stage stage = (Stage) rlPic.getScene().getWindow();
+        stage.close();
+    }
+    public void codGame() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/GamesFXML/COD_Adatlap.fxml"));
+        Stage dataStage = new Stage();
+        dataStage.setTitle("Adatlap");
+        dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        dataStage.setScene(new Scene(newUser, 810, 600));
+        dataStage.setResizable(false);
+        dataStage.show();
+        Stage stage = (Stage) codPic.getScene().getWindow();
         stage.close();
     }
 

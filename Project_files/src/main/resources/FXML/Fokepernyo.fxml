@@ -102,17 +102,17 @@
                               <Image url="@../Pictures/ds.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="373.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="rlPic" fitHeight="190.0" fitWidth="285.0" layoutX="373.0" layoutY="420.0" onMouseClicked="#rocketleagueGame" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/rl.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="211.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView  fx:id="rd2Pic" fitHeight="190.0" fitWidth="285.0" layoutX="211.0" layoutY="420.0" onMouseClicked="#reddead2Game" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/rdr2.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="530.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView  fx:id="codPic" fitHeight="190.0" fitWidth="285.0" layoutX="530.0" layoutY="420.0" onMouseClicked="#codGame" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/cod.png" />
                            </image>
