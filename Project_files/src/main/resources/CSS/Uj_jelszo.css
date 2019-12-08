@@ -25,12 +25,12 @@
     -fx-border-radius: 3px;
 }
 
-#backButton {
+#backButton1 {
     -fx-background-radius: 0px;
 }
 
-#backButton:hover{
-    -fx-background-color: #6747CD;
+#backButton1:hover{
+    -fx-background-color: transparent;
     -fx-background-radius: 0px;
     -fx-border-color: #000000;
     -fx-border-width: 0px 5px 0px 0px;

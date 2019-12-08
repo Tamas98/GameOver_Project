@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 public class Uj_jelszo {
 
     @FXML
-    Button saveButton, backButton;
+    Button saveButton, backButton1;
 
     @FXML
     Label warningName, warningPassw;
@@ -65,7 +65,7 @@ public class Uj_jelszo {
      * visszalépés az Üdvözlő felületre
      * @throws Exception
      */
-    public void backButtonClicked() throws Exception {
+    public void backButton1Clicked() throws Exception {
         Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/Udvozlo.fxml"));
         Stage regStage = new Stage();
         regStage.setTitle("Game_Over");
@@ -73,7 +73,7 @@ public class Uj_jelszo {
         regStage.setScene(new Scene(newUser, 480, 720));
         regStage.setResizable(false);
         regStage.show();
-        Stage stage = (Stage) backButton.getScene().getWindow();
+        Stage stage = (Stage) backButton1.getScene().getWindow();
         stage.close();
 
     }
