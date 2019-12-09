@@ -117,22 +117,22 @@
                               <Image url="@../Pictures/cod.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="51.0" layoutY="636.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="gtaPic" fitHeight="190.0" fitWidth="285.0" layoutX="51.0" layoutY="636.0" onMouseClicked="#gtaGame" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/gta5.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="211.0" layoutY="636.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="apexPic" fitHeight="190.0" fitWidth="285.0" layoutX="211.0" layoutY="636.0" onMouseClicked="#apexGame" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/al.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="373.0" layoutY="636.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="csgoPic" fitHeight="190.0" fitWidth="285.0" layoutX="373.0" layoutY="636.0" onMouseClicked="#csgoGame" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/csgo.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="530.0" layoutY="636.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="fifaPic" fitHeight="190.0" fitWidth="285.0" layoutX="530.0" layoutY="636.0" onMouseClicked="#fifaGame" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/fifa.png" />
                            </image>
@@ -142,22 +142,22 @@
                               <Font name="Arial" size="15.0" />
                            </font>
                         </TextField>
-                        <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="49.0" layoutY="850.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="bfPic" fitHeight="190.0" fitWidth="285.0" layoutX="49.0" layoutY="850.0" onMouseClicked="#bfGame" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/bf.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="211.0" layoutY="850.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="ds3Pic" fitHeight="190.0" fitWidth="285.0" layoutX="211.0" layoutY="850.0" onMouseClicked="#ds3Game" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/ds3.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="373.0" layoutY="850.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="mkPic" fitHeight="190.0" fitWidth="285.0" layoutX="373.0" layoutY="850.0" onMouseClicked="#mkGame" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/mk.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="190.0" fitWidth="285.0" layoutX="530.0" layoutY="850.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="swPic" fitHeight="190.0" fitWidth="285.0" layoutX="530.0" layoutY="850.0" onMouseClicked="#swGame" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Pictures/sw.png" />
                            </image>

@@ -20,7 +20,7 @@ public class Fokepernyo implements Initializable {
     Button signOutButton, mainButton, libButton, exitButton;
 
     @FXML
-    ImageView rainbowPic, dsPic, nfsPic, pubgPic, rd2Pic,rlPic,codPic;
+    ImageView rainbowPic, dsPic, nfsPic, pubgPic, rd2Pic,rlPic,codPic, gtaPic, apexPic, csgoPic, fifaPic, bfPic, ds3Pic, mkPic, swPic;
 
     @FXML
     Pane mainPane, libPane;
@@ -125,6 +125,94 @@ public class Fokepernyo implements Initializable {
         dataStage.setResizable(false);
         dataStage.show();
         Stage stage = (Stage) codPic.getScene().getWindow();
+        stage.close();
+    }
+    public void gtaGame() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/GamesFXML/GTA_Adatlap.fxml"));
+        Stage dataStage = new Stage();
+        dataStage.setTitle("Adatlap");
+        dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        dataStage.setScene(new Scene(newUser, 810, 600));
+        dataStage.setResizable(false);
+        dataStage.show();
+        Stage stage = (Stage) gtaPic.getScene().getWindow();
+        stage.close();
+    }
+    public void apexGame() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/GamesFXML/Apex_Adatlap.fxml"));
+        Stage dataStage = new Stage();
+        dataStage.setTitle("Adatlap");
+        dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        dataStage.setScene(new Scene(newUser, 810, 600));
+        dataStage.setResizable(false);
+        dataStage.show();
+        Stage stage = (Stage) apexPic.getScene().getWindow();
+        stage.close();
+    }
+    public void csgoGame() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/GamesFXML/CSGO_Adatlap.fxml"));
+        Stage dataStage = new Stage();
+        dataStage.setTitle("Adatlap");
+        dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        dataStage.setScene(new Scene(newUser, 810, 600));
+        dataStage.setResizable(false);
+        dataStage.show();
+        Stage stage = (Stage) csgoPic.getScene().getWindow();
+        stage.close();
+    }
+    public void fifaGame() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/GamesFXML/Fifa_Adatlap.fxml"));
+        Stage dataStage = new Stage();
+        dataStage.setTitle("Adatlap");
+        dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        dataStage.setScene(new Scene(newUser, 810, 600));
+        dataStage.setResizable(false);
+        dataStage.show();
+        Stage stage = (Stage) fifaPic.getScene().getWindow();
+        stage.close();
+    }
+    public void bfGame() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/GamesFXML/BF_Adatlap.fxml"));
+        Stage dataStage = new Stage();
+        dataStage.setTitle("Adatlap");
+        dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        dataStage.setScene(new Scene(newUser, 810, 600));
+        dataStage.setResizable(false);
+        dataStage.show();
+        Stage stage = (Stage) bfPic.getScene().getWindow();
+        stage.close();
+    }
+    public void ds3Game() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/GamesFXML/DS3_Adatlap.fxml"));
+        Stage dataStage = new Stage();
+        dataStage.setTitle("Adatlap");
+        dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        dataStage.setScene(new Scene(newUser, 810, 600));
+        dataStage.setResizable(false);
+        dataStage.show();
+        Stage stage = (Stage) ds3Pic.getScene().getWindow();
+        stage.close();
+    }
+    public void mkGame() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/GamesFXML/MK_Adatlap.fxml"));
+        Stage dataStage = new Stage();
+        dataStage.setTitle("Adatlap");
+        dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        dataStage.setScene(new Scene(newUser, 810, 600));
+        dataStage.setResizable(false);
+        dataStage.show();
+        Stage stage = (Stage) mkPic.getScene().getWindow();
+        stage.close();
+    }
+    public void swGame() throws Exception {
+        Parent newUser = FXMLLoader.load(getClass().getResource("/FXML/GamesFXML/SW_Adatlap.fxml"));
+        Stage dataStage = new Stage();
+        dataStage.setTitle("Adatlap");
+        dataStage.getIcons().add(new Image("/Pictures/Icon.png"));
+        dataStage.setScene(new Scene(newUser, 810, 600));
+        dataStage.setResizable(false);
+        dataStage.show();
+        Stage stage = (Stage) swPic.getScene().getWindow();
         stage.close();
     }
 
